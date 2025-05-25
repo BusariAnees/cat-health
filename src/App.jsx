@@ -5,12 +5,11 @@ import "./assets/js/script.js";
 function App() {
   return (
     <>
-      <section className="head-section">
-        <head className="head">
-          <div className="head-logo">Meown</div>
-
-          <div className="head-nav-container">
-            <nav className="head-nav">
+      <section className="header-section">
+      <div className="header-logo">Meown</div>
+        <header className="header">
+           <div className="header-nav-container">
+            <nav className="header-nav">
               <a href="">Products </a>
               <a href="">Clinical trials</a>
               <a href="">For vets</a>
@@ -23,7 +22,7 @@ function App() {
               <span></span>
             </div>
           </div>
-        </head>
+        </header>
       </section>
     </>
   );
