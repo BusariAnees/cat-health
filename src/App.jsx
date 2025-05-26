@@ -5,9 +5,9 @@ import "./assets/js/script.js";
 function App() {
   return (
     <>
-      <section className="header-section">
-      <div className="header-logo">Meown</div>
-        <header className="header">
+      <section className="main-section">
+    <header className="header">
+        <div className="header-logo">Meown</div>
            <div className="header-nav-container">
             <nav className="header-nav">
               <a href="">Products </a>
@@ -17,7 +17,6 @@ function App() {
               <a href="">Blog</a>
             </nav>
             <div className="hamburger" id="hamburger">
-              <span></span>
               <span></span>
               <span></span>
             </div>

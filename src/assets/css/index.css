@@ -15,32 +15,63 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color:rgb(236, 206, 196);
 
+padding: 0px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 body {
   font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  height: 100%;
+  margin: 0px;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
 }
 
 
-.header-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header-logo {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #0000008c;
+
+.main-section {
+  background-image: url("/src/assets/img/cat-adobes.png");
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:rgb(236, 206, 196);
+  height: 50rem;
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 1.5rem;
+}
+.header-logo {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0000008c;
+  display: inline-block;
+  transform: scaleY(1.2);
+}
+
+.header-nav-container {
+  display: flex;
   height: 4rem;
+  align-items: center;
+  padding-top: 1.3rem;
 }
 
 .header-nav {
@@ -50,27 +81,32 @@ body {
   gap: 2rem;
   padding: 1.6rem 2rem;
   height: 100%;
+  margin-right: 16rem;
+
 }
 
 .header-nav a {
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
   position: relative;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
+
 
 .header-nav a::after {
   content: '';
   position: absolute;
-  width: 0%;
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #ff6b81; 
-  transition: width 0.3s ease;
+  width: 0px;
+  background-color: #ff6b81;
+  transition: width 0.3s ease-in-out;
 }
+
+
 
 .header-nav a:hover {
   color: #ff6b81;
@@ -89,4 +125,13 @@ body {
   justify-content: space-between;
   cursor: pointer;
   z-index: 1001;
+  padding: 4px 0;
+  padding: 8px 0;
+}
+
+.hamburger span {
+  background-color: black;
+  height: 1.5px;
+  border: 1px solid black;
+  width: 1.5rem;
 }
