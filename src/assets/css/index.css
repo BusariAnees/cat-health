@@ -68,6 +68,8 @@ body {
   transform: scaleY(1.2);
 }
 
+
+
 .header-nav-container {
   display: flex;
   height: 4rem;
@@ -135,4 +137,13 @@ body {
   height: 1.5px;
   border: 1px solid black;
   width: 1.5rem;
+  transition: 0.3s;
 }
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    transform: translateX(-1px) rotate(-45deg);
+  }
+  
