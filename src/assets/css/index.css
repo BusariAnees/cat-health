@@ -47,8 +47,9 @@ body {
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-color:rgb(236, 206, 196);
+  background-color: rgb(230 226 225);
   height: 50rem;
+  padding: 2.3rem;
 }
 
 .header {
