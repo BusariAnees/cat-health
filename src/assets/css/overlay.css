@@ -1,0 +1,72 @@
+.overlay-section {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+  
+  
+}
+
+.overlay-section-div {
+    display: flex;
+        justify-content: space-between;
+        align-items: start;
+}
+
+
+.overlay {
+    height: 100%;
+    background: rgb(31, 41, 54);
+    padding: 2.3rem 4rem;
+    display: none;
+    /* or visibility: hidden; opacity: 0; transform: translateY(-100%) */
+    transition: color 0.2s ease;
+  }
+
+  .overlay::after{
+    
+  }
+  
+.overlay-logo{
+    color: #c2c2c2;
+}
+
+  .overlay.overlay--active {
+    display: block;
+    /* or visibility: visible; opacity: 1; transform: translateY(0) */
+  }
+  
+
+  .article-dsp {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #f7b843;
+  }
+
+  .overlay-ul {
+    margin-right: 5rem;
+  }
+
+  .overlay-ul a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+.ul-dsp {
+   list-style: none;
+   text-align: start;
+}
+
+.ul-dsp li {
+    display: inline;
+    font-size: 0.8rem;
+}
+
+.line-dsp{
+    color: rgb(74 95 131);
+    margin: 0 6px;
+    display: inline;
+}

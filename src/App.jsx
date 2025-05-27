@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./assets/css/App.css";
+import "./assets/css/overlay.css"
 import Overlay from "./overlay";
 
 function App() {
@@ -29,7 +30,13 @@ function App() {
         </header>
       </section>
       <section className="overlay-section">
-        <Overlay />
+      <div className={`overlay ${isActive ? "overlay--active" : ""}`}>
+      {   <Overlay 
+        isActive = {isActive}
+        setIsActive = {setIsActive}
+        />}
+    </div>
+     
       </section>
     </>
   );

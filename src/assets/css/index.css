@@ -140,8 +140,15 @@ body {
   transition: 0.3s;
 }
 
+.hamburger.active span{
+  background-color:  #c2c2c2;
+  border: 1px solid #c2c2c2;
+}
+
 .hamburger.active span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
+  
+
   }
   .hamburger.active span:nth-child(2) {
     transform: translateX(-1px) rotate(-45deg);

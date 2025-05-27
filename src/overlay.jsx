@@ -1,90 +1,115 @@
-export default function Overlay() {
+export default function Overlay(props) {
   return (
     <>
-      <div className="header-logo">Meown</div>
-      <a href="">
-        <article>About us</article>
-        <ul>
-          <li>Our team</li>
-          <li>Press room</li>
-          <li>Publications</li>
-          <li>Our impact</li>
-        </ul>
-      </a>
+      <div className="overlay-section-div">
+        <div className="header-logo overlay-logo">Meown</div>
+        <div className="overlay-ul">
+          <a href="">
+            <article className="article-dsp">About us</article>
+            <ul className="ul-dsp">
+              <li>Our team</li>
+              <div className="line-dsp">/</div>
+              <li>Press room</li>
+              <div className="line-dsp">/</div>
+              <li>Publications</li>
+               <div className="line-dsp">/</div> <br />
+              <li>Our impact</li>
+            </ul>
+          </a>
 
-      <a href="">
-        <ul>
-          <article>Products</article>
+          <a href="">
+            <article className="article-dsp">Products</article>
+            <ul className="ul-dsp">
+              <li>LOY-001</li>
+              <div className="line-dsp">/</div>
+              <li>LOY-002</li>
+              <div className="line-dsp">/</div>
+              <li>LOY-003</li>
+              <div className="line-dsp">/</div> <br />
+              <li>Our guiding principles</li>
+            </ul>
+          </a>
 
-          <li>LOY-001</li>
-          <li>LOY-002</li>
-          <li>LOY-003</li>
-          <li>Our guiding principles</li>
-        </ul>
-      </a>
+          <a href="">
+            <article className="article-dsp">Clinical trials</article>
+            <ul className="ul-dsp">
+              <li>Stay study</li>
+              <div className="line-dsp">/</div>
+              <li>Qualifications</li>
+              <div className="line-dsp">/</div>  <br />
+              <li>Participatingclinical sites </li>
+              <div className="line-dsp">/</div>
+              <li>Q&A</li>
+            </ul>
+          </a>
 
-      <a href="">
-        <article>Clinical trials</article>
-        <ul>
-          <li>Stay study</li>
-          <li>Qualifications</li>
-          <li>Participatingclinical sites </li>
-          <li>Q&A</li>
-        </ul>
-      </a>
+          <a href="">
+            <article className="article-dsp">Clinical trials</article>
+            <ul className="ul-dsp">
+              <li>Stay study</li>
+              <div className="line-dsp">/</div>
+              <li>Qualifications</li>
+              <div className="line-dsp">/</div>  <br />
+              <li>Participatingclinical sites </li>
+              <div className="line-dsp">/</div>
+              <li>Q&A</li>
+            </ul>
+          </a>
+          <a href="">
+            <article className="article-dsp">For vets</article>
+            <ul className="ul-dsp">
+              <li>Aging thesis</li>
+              <div className="line-dsp">/</div>
+              <li>Drugs in development</li>
+              <div className="line-dsp">/</div>  <br />
+              <li>Resources </li>
+              <div className="line-dsp">/</div> <br />
+              <li>Continuing education </li> 
+              <div className="line-dsp">/</div> 
+              <li>Q&A</li>
+            </ul>
+          </a>
 
-      <a href="">
-        <article>Clinical trials</article>
-        <ul>
-          <li>Stay study</li>
-          <li>Qualifications</li>
-          <li>Participatingclinical sites </li>
-          <li>Q&A</li>
-        </ul>
-      </a>
-      <a href="">
-        <article>For vets</article>
-        <ul>
-          <li>Aging thesis</li>
-          <li>Drugs in development</li>
-          <li>Resources </li>
-          <li>Continuing education </li>
-          <li>Q&A</li>
-        </ul>
-      </a>
+          <a href="">
+            <article className="article-dsp">For cat owners</article>
+            <ul className="ul-dsp">
+              <li>Effect of aging</li>
+              <div className="line-dsp">/</div> 
+              <li>For senior cats</li>
+              <div className="line-dsp">/</div> <br />
+              <li>For large and giant cats</li>
+              <div className="line-dsp">/</div>
+              <li>Resources </li>
+              <div className="line-dsp">/</div> <br />
+              <li>Q&A</li>
+            </ul>
+          </a>
 
-      <a href="">
-        <article>For cat owners</article>
-        <ul>
-          <li>Effect of aging</li>
-          <li>For senior cats</li>
-          <li>For large and giant cats</li>
-          <li>Resources </li>
-          <li>Q&A</li>
-        </ul>
-      </a>
-
-      <a href="">
-        <article>Blog</article>
-        <ul>
-          <li>Learn more about aging health in cats</li>
-        </ul>
-      </a>
-      <a href="">
-        <article>Contact us</article>
-        <ul>
-          <li>General inquiry</li>
-          <li>loyal veteinary team </li>
-          <li>Press contact </li>
-        </ul>
-      </a>
-      <div
-              className={`hamburger ${isActive ? "active" : ""}`}
-              onClick={() => setIsActive(!isActive)}
-            >
-              <span></span>
-              <span></span>
-            </div>
+          <a href="">
+            <article className="article-dsp">Blog</article>
+            <ul className="ul-dsp">
+              <li>Learn more about aging health in cats</li>
+            </ul>
+          </a>
+          <a href="">
+            <article className="article-dsp">Contact us</article>
+            <ul className="ul-dsp">
+              <li>General inquiry</li>
+              <div className="line-dsp">/</div>
+              <li>loyal veteinary team </li>
+              <div className="line-dsp">/</div>
+              <li>Press contact </li>
+            </ul>
+          </a>
+        </div>
+        {/* <div
+          className={`hamburger ${props.isActive ? "active" : ""}`}
+          onClick={() => setIsActive(!props.isActive)}
+        >
+          <span></span>
+          <span></span>
+        </div> */}
+      </div>
     </>
   );
 }
