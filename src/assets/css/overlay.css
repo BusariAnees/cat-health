@@ -1,72 +1,93 @@
 .overlay-section {
-    top: 0;
-    right: 0;
-    left: 0;
-    position: fixed;
-    height: 100vh;
-  
-  
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
 }
 
 .overlay-section-div {
-    display: flex;
-        justify-content: space-between;
-        align-items: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
-
 
 .overlay {
-    height: 100%;
-    background: rgb(31, 41, 54);
-    padding: 2.3rem 4rem;
-    display: none;
-    /* or visibility: hidden; opacity: 0; transform: translateY(-100%) */
-    transition: color 0.2s ease;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: rgb(31, 41, 54);
+  padding: 2.3rem 4rem;
 
-  .overlay::after{
-    
-  }
-  
-.overlay-logo{
-    color: #c2c2c2;
+  /* Initial state (hidden) */
+  opacity: 1;
+  transform: translateY(-100%);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 999;
 }
 
-  .overlay.overlay--active {
-    display: block;
-    /* or visibility: visible; opacity: 1; transform: translateY(0) */
-  }
-  
+.overlay-logo {
+  color: #c2c2c2;
+}
 
-  .article-dsp {
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: #f7b843;
-  }
+.overlay.overlay--active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  z-index: 1100;
+}
 
-  .overlay-ul {
-    margin-right: 5rem;
-  }
+.article-dsp {
+  text-align: start;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #f7b843;
+}
 
-  .overlay-ul a{
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  }
+.overlay-ul {
+  margin-right: 5rem;
+  width: 50%;
+  padding-top: 2rem;
+  overflow: hidden;
+  max-height: 40rem;
+}
+
+.overlay-ul a {
+  border-block: 0.5px solid rgb(74, 95, 131);
+  padding: 2.5rem 0;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .ul-dsp {
-   list-style: none;
-   text-align: start;
+  width: 15rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping to new line */
+  gap: 0.5rem; /* space between items */
+  padding: 0;
+  margin: 0;
+  max-width: 100%; /* Ensure container has limited width */
 }
 
 .ul-dsp li {
-    display: inline;
-    font-size: 0.8rem;
+  white-space: nowrap; /* prevent breaking inside item */
+  position: relative;
+  color: #fff;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 600;
 }
 
-.line-dsp{
-    color: rgb(74 95 131);
-    margin: 0 6px;
-    display: inline;
+/* Add a / after each item, except the last */
+.ul-dsp li:not(:last-child)::after {
+  content: "/";
+  margin-left: 0.5rem;
+  color: rgb(74, 95, 131);
 }

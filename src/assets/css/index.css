@@ -53,6 +53,8 @@ body {
 }
 
 .header {
+    position: relative; 
+  z-index: 1000; /* higher than overlay when overlay hidden */
   display: flex;
   align-items: center;
   justify-content: space-between;
