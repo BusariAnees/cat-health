@@ -5,6 +5,9 @@ import Overlay from "./overlay";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+
+
+
 function App() {
   const [isActive, setIsActive] = useState(false);
 
@@ -46,6 +49,14 @@ function App() {
     <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
    </button>
         </div>
+
+<div className="hero-div-footer">
+
+<p className="learn">LEARN MORE</p>
+<img src="/arrow-down.svg" alt="" />
+<p className="cat-name">Bella</p>
+<p className="cat-age"> Age 4</p>
+</div>
 
       </section>
     </>
