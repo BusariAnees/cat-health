@@ -20,8 +20,6 @@
   height: 100vh;
   background: rgb(31, 41, 54);
   padding: 2.3rem 4rem;
-
-  /* Initial state (hidden) */
   opacity: 1;
   transform: translateY(-100%);
   pointer-events: none;
@@ -39,6 +37,8 @@
   pointer-events: auto;
   z-index: 1100;
 }
+
+
 
 .article-dsp {
   text-align: start;

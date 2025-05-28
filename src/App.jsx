@@ -2,13 +2,20 @@ import { useState } from "react";
 import "./assets/css/App.css";
 import "./assets/css/overlay.css"
 import Overlay from "./overlay";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [isActive, setIsActive] = useState(false);
 
   return (
     <>
+      <div className={`overlay ${isActive ? "overlay--active" : ""}`}>
+        <Overlay isActive={isActive} setIsActive={setIsActive} />
+      </div>
+
       <section className="main-section">
+        <div className="header-div">
         <header className="header">
           <div className="header-logo">Meown</div>
           <div className="header-nav-container">
@@ -19,27 +26,31 @@ function App() {
               <a href="">For cat owners</a>
               <a href="">Blog</a>
             </nav>
-            <div
+          
+          </div>
+        </header>
+          <div
               className={`hamburger ${isActive ? "active" : ""}`}
               onClick={() => setIsActive(!isActive)}
             >
               <span></span>
               <span></span>
             </div>
-          </div>
-        </header>
-      </section>
-      <section className="overlay-section">
-      <div className={`overlay ${isActive ? "overlay--active" : ""}`}>
-      {   <Overlay 
-        isActive = {isActive}
-        setIsActive = {setIsActive}
-        />}
-    </div>
-     
+        </div>
+      
+        <div className="hero-content">
+   <h1 className="hero-heading">More time  <br /> with the cats <br />  we love</h1>
+
+   <button className="btn-connected">
+    <a  className="btn-connected-a" href=""> Stay connected</a>
+    <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
+   </button>
+        </div>
+
       </section>
     </>
   );
 }
+
 
 export default App;
