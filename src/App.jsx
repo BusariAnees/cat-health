@@ -1,9 +1,12 @@
 import { useState } from "react";
 import "./assets/css/App.css";
 import "./assets/css/overlay.css"
+import "./assets/css/sections.css"
 import Overlay from "./overlay";
+import Section from './sections';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -58,6 +61,9 @@ function App() {
 <p className="cat-age"> Age 4</p>
 </div>
 
+      </section>
+      <section className="body-section">
+   <Section/>
       </section>
     </>
   );

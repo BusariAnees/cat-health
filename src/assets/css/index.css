@@ -42,7 +42,6 @@ body {
 .main-section {
   background-image: url("/src/assets/img/cat-adobes.png");
   background-size: cover;
-  height: 100%;
   background-position: 80px -35rem;
   background-repeat: no-repeat;
   background-color: #ffeaca;
