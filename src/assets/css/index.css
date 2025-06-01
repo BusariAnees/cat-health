@@ -199,7 +199,7 @@ body {
 
 .hero-div-footer {
   margin-top: 6rem;
-  font-size: 0.8rem;
+
 }
 
 .hero-div-footer p {
@@ -216,6 +216,7 @@ body {
 
 .cat-name {
   font-weight: 900;
+  font-size: 0.8rem;
 }
 .cat-age {
   font-size: 0.8rem;
