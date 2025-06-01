@@ -120,7 +120,7 @@ body {
 }
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   width: 30px;
   height: 25px;
   display: flex;

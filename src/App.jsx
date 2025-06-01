@@ -62,7 +62,7 @@ function App() {
 </div>
 
       </section>
-      <section className="body-section">
+      <section>
    <Section/>
       </section>
     </>
