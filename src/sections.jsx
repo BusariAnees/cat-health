@@ -1,3 +1,7 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 export default function Sections() {
   return (
     <>
@@ -26,8 +30,11 @@ export default function Sections() {
       <section className="body-section section-2">
 
       <div className="section-2-1">
-          <p className="cat-name">Annie</p>
+        <div>
+        <p className="cat-name">Annie</p>
           <p className="cat-age"> Age 6</p>
+        </div>
+          
         </div>
 
         <div className="section-2-2" >
@@ -35,10 +42,12 @@ export default function Sections() {
   <p className="section-body-p-2"> Extending <br /> healthy lifespan</p>
 
 <div className="section-div-2">
-<article>
+<article className="article-2-ds">
+   <div className="head-article">
     <h3>LOY‑002 </h3>
     <p className="section-2-ds">for senior cats</p>
-    <ul>
+    </div>
+    <ul className="article-2-ul">
       <li><strong>Target Audience:</strong> Cats aged 11 years and older</li>
       <li><strong>Minimum Weight:</strong> At least 8 lb (3.6 kg)</li>
       <li><strong>Focused on:</strong> Addressing age-related metabolic decline in senior cats</li>
@@ -46,21 +55,28 @@ export default function Sections() {
     </ul>
   </article>
 
-  <article>
-    <h3>LOY‑001, LOY‑003 </h3>
-    <p className="section-2-ds"> for large  cats</p>
-    <ul>
-      <li><strong>Target Audience:</strong> Cats aged 8 years and older, particularly larger breeds (e.g., Maine Coons)</li>
+  <article className="article-2-ds article-2-2-ds">
+    <div className="head-article">
+<h3>LOY‑001, LOY‑003 </h3>
+    <p className="section-2-ds "> for large  cats</p>
+    </div>
+    
+    <ul className="article-2-ul">
+      <li><strong>Target Audience:</strong> Cats aged 8 years and older, </li>
       <li><strong>Minimum Weight:</strong> At least 12 lb (5.4 kg)</li>
       <li><strong>Focused on:</strong> Modulating IGF-1 and growth hormone (GH) overexpression in post-maturity stages</li>
       <li><strong>Projected Approval:</strong> 2027</li>
     </ul>
   </article>
 </div>
-  
+<button className="btn-connected ">
+    <a  className="btn-connected-a" href=""> Explore our products</a>
+    <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
+   </button>
         </div>
-
+ 
 </section>
+
     </>
   );
 }

@@ -217,9 +217,11 @@ body {
 .cat-name {
   font-weight: 900;
   font-size: 0.8rem;
+  margin: 0px !important;
 }
 .cat-age {
   font-size: 0.8rem;
+  margin: 0px !important;
 }
 
 
