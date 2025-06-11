@@ -5,6 +5,7 @@ import "./assets/css/sections.css";
 import "./assets/css/footer.css";
 import Overlay from "./overlay";
 import Section from './sections';
+import Header from "./header"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -23,28 +24,7 @@ function App() {
       </div>
 
       <section className="main-section">
-        <div className="header-div">
-        <header className="header">
-          <div className="header-logo">Meown</div>
-          <div className="header-nav-container">
-            <nav className="header-nav">
-              <a href="">Products</a>
-              <a href="">Clinical trials</a>
-              <a href="">For vets</a>
-              <a href="">For cat owners</a>
-              <a href="">Blog</a>
-            </nav>
-          
-          </div>
-        </header>
-          <div
-              className={`hamburger ${isActive ? "active" : ""}`}
-              onClick={() => setIsActive(!isActive)}
-            >
-              <span></span>
-              <span></span>
-            </div>
-        </div>
+       <Header isActive={isActive} setIsActive={setIsActive}  />
       
         <div className="hero-content">
    <h1 className="hero-heading">More time  <br /> with the cats <br />  we love</h1>
