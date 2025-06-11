@@ -177,10 +177,16 @@ body {
   background: rgb(31, 41, 54);
   border-radius: 10rem;
   margin-left: 2rem;
-  width: 15.5rem;
+  height: 3rem;
+  width: 16rem;
   justify-content: space-between;
   padding: 0 1rem;
 }
+
+.btn-connected:hover {
+  background: rgb(64, 77, 94);
+}
+
 
 .btn-connected-a {
   color: white;

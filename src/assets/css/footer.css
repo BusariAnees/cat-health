@@ -1,0 +1,54 @@
+.footer-div {
+    height: 40rem;
+    background-color: rgb(31, 41, 54);
+    padding: 2.3rem 4rem;
+  
+
+}
+
+.footer-ds {
+    margin: 7rem 0 0 43rem;
+    width: 25rem;
+
+}
+
+
+.footer-ds p{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: start;
+    line-height: 3rem;
+}
+
+.footer-p-1 {
+    color: rgb(240 219 117);
+   
+}
+
+.footer-p-2 {
+    color: white;
+}
+
+
+.footer-ds button {
+    background: rgb(41 52 72) !important;
+    margin: 1.5rem 0;
+}
+
+
+.footer-ds button:hover {
+    background:rgb(64, 77, 94) !important;
+}
+
+.footer-ground {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9rem;
+}
+
+
+.footer-ground p{
+color: rgb(74 95 131);
+font-size: 0.75rem;
+}

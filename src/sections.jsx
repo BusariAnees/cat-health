@@ -1,5 +1,7 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Footer from "./footer";
+
 
 export default function Sections() {
   return (
@@ -134,7 +136,7 @@ export default function Sections() {
            <button className="btn-connected ">
           <a className="btn-connected-a" href="">
             {" "}
-            Explore our products
+            Learn more
           </a>
           <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
         </button>
@@ -145,6 +147,8 @@ export default function Sections() {
             <p className="cat-age"> Age 10</p>
             </div>
       </section>
+
+     <Footer/>
     </>
   );
 }
