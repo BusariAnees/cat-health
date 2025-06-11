@@ -121,3 +121,42 @@
 .section-2-2 button{
     margin: 0;
 }
+
+
+
+
+
+.section-3{
+    display: block;
+    margin: 6rem 0;
+}
+
+.section-4-1 {
+    background-color: rgb(248, 248, 242);
+    width: 90%;
+    padding: 2.3rem;
+    margin: 5rem auto;
+    height: 40rem;
+    text-align: end;
+  }
+
+
+
+
+  .div-section-3{
+    display: flex;
+    height: 100%;
+  }
+
+  .image-3-div{
+    background-image: url(/src/assets/img/cat-3.png);
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-position: -10px -13rem;
+    width: 70%;
+  }
+
+  .des-3-div {
+    width: 30%;
+  }
