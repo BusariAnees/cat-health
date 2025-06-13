@@ -1,18 +1,20 @@
 import "./assets/css/App.css";
+import { Link } from "react-router-dom";
+
  
  function Header({isActive, setIsActive}){
     return (
         <>
         <div className="header-div">
            <header className="header">
-             <div className="header-logo">Meown</div>
+             <Link to="/" className="header-logo">Meown</Link>
              <div className="header-nav-container">
                <nav className="header-nav">
-                 <a href="">Products</a>
-                 <a href="">Clinical trials</a>
-                 <a href="">For vets</a>
-                 <a href="">For cat owners</a>
-                 <a href="">Blog</a>
+               <Link to="/products">Products</Link>
+              <Link to="/clinical">Clinical trials</Link>
+              <Link to="/vets">For vets</Link>
+              <Link to="/owner">For cat owners</Link>
+              <Link to="/blog">Blog</Link>
                </nav>
              
              </div>

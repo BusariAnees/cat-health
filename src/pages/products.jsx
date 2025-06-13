@@ -1,4 +1,4 @@
-import Header from "./header";
+import Header from "../header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,8 +7,7 @@ export default function Product() {
   return (
     <>
     <section>
-    <Header />
-    
+ 
       <p>Products in defvelopment</p>
       <div>
         <p>Our products aim to extend lifespan and quality of life by reducing incidence or severity of age-related diseases. We’re developing drugs in two categories:</p> `

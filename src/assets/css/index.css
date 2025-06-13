@@ -39,6 +39,10 @@ body {
   text-align: center;
 }
 
+.hero-wrapper {
+  background-color: #ffeaca;
+}
+
 .main-section {
   background-image: url("/src/assets/img/cat-adobes.png");
   background-size: cover;
@@ -50,6 +54,8 @@ body {
 }
 
 .header {
+  margin-top: 2rem;
+
   position: relative;
   z-index: 1000; /* higher than overlay when overlay hidden */
   display: flex;
@@ -65,7 +71,8 @@ body {
   color: #0000008c;
   display: inline-block;
   transform: scaleY(1.2);
-  margin-right: 10rem;
+  margin-right: 12rem;
+  text-decoration: none;
 }
 
 .header-nav-container {
@@ -120,6 +127,7 @@ body {
 }
 
 .hamburger {
+  margin: 3.5rem 3rem 0;
   position: fixed;
   width: 30px;
   height: 25px;
@@ -204,7 +212,7 @@ body {
 }
 
 .hero-div-footer {
-  margin-top: 6rem;
+  margin-top: 3.5rem;
 
 }
 
