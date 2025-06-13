@@ -120,6 +120,16 @@ body {
   width: 100%;
 }
 
+.header-nav a.active {
+  color: rgb(240 117 117); /* or any color you want */
+}
+
+.header-nav a.active::after {
+  background-color: rgb(240 117 117);
+  width: 100%; /* ensures underline shows on active page */
+}
+
+
 .header-div {
   display: flex;
   align-items: center;

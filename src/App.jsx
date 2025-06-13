@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 
-import "./assets/css/App.css";
+
 import "./assets/css/overlay.css";
 import "./assets/css/sections.css";
 import "./assets/css/footer.css";
