@@ -2,24 +2,22 @@ import Header from "../header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+import "../assets/css/products.css";
+
 
 export default function Owner() {
-    return (
-      <>
-      <section>
+  return (
+    <>
+    <section>
+ <div className="nav-section-div-1">
+ <p className="nav-section-p-1 nav-section-4-p-1">The first longevity
+drugs for your dog</p>
+ </div>
+     
+      <p></p>
+    </section>
+     
     
-      
-        <p>Products in defvelopment</p>
-        <div>
-          <p>Our products aim to extend lifespan and quality of life by reducing incidence or severity of age-related diseases. We’re developing drugs in two categories:</p> `
-          <a href="">For senior cats <FontAwesomeIcon icon={faArrowRight}/> </a>
-          <a href="">For large and giant cats <FontAwesomeIcon icon={faArrowRight}/></a>
-        </div>
-        <p></p>
-      </section>
-       
-      
-      </>
-    );
-  }
-  
+    </>
+  );
+}

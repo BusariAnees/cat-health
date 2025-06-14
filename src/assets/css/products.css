@@ -31,11 +31,15 @@
     margin: 0 0 2rem;
 }
 
+.nav-section-div-2-p {
+    margin-bottom: 1.3rem !important;
+}
+
 .nav-section-div-3{
     text-align: start;
 }
 
-.nav-section-div-2 a {
+.nav-section-div-3 a {
     margin-bottom: 1rem;
     text-decoration: none;
   font-size: 1rem;
@@ -49,7 +53,7 @@
 
 
 
-.nav-section-div-2 a:hover {
+.nav-section-div-3 a:hover {
     color: rgb(240 117 117);
 }
 
@@ -60,3 +64,40 @@
 .nav-section-div-2 a:hover .right-arrow {
     transform: translateX(13px); 
 }
+
+
+/* clinicals */
+.nav-section-2-p-1 {
+    width: 60%;
+}
+
+
+
+.btn-clinicals {
+    margin: 0;
+}
+
+/* owner */
+
+
+.nav-section-4-p-1 {
+    width: 70%;
+}
+
+
+
+
+.nav-products-img {
+    background-image: url("/src/assets/img/cat-5.png");
+    background-size: cover;
+    background-position: 60px -3rem;
+    background-repeat: no-repeat;
+    background-color: rgb(238 237 221 );
+    height: 46rem;
+    padding: 2.3rem;
+}
+
+.cat-des-products {
+    text-align: start;
+}
+

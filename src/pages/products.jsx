@@ -20,8 +20,13 @@ export default function Product() {
 
       </div>
  </div>
-     
-      <p></p>
+     <div className="nav-products-img">
+     <div className="cat-des-products">
+            <p className="cat-name">Pixel</p>
+            <p className="cat-age"> Age 12</p>
+            </div>
+     </div>
+
     </section>
      
     
