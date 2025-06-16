@@ -2,6 +2,8 @@ import Header from "../header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+import CatPipeline from  '../components/CatPipeline';
+
 import "../assets/css/products.css";
 
 
@@ -26,7 +28,7 @@ export default function Product() {
             <p className="cat-age"> Age 12</p>
             </div>
      </div>
-
+     <CatPipeline />
     </section>
      
     
