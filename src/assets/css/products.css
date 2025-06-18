@@ -1,103 +1,94 @@
 .nav-section-p-1 {
-    font-size: 6rem;
-    line-height: 5.7rem;
-    letter-spacing: -.02em;
-    font-weight: 500;
-    width: 45%;
-    text-align: start;
-    margin-bottom: 7.2rem;
+  font-size: 6rem;
+  line-height: 5.7rem;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  width: 45%;
+  text-align: start;
+  margin-bottom: 7.2rem;
 }
 
-
-.nav-section-div-1{
-    display: flex;
-    align-items: center;
-    padding: 3.7rem 2.8rem 0  4.5rem ;
-    justify-content: space-between;
+.nav-section-div-1 {
+  display: flex;
+  align-items: center;
+  padding: 3.7rem 2.8rem 0 4.5rem;
+  justify-content: space-between;
 }
 
 .nav-section-div-2 {
-    font-size: .875rem;
-    line-height: 1.5rem;
-    width: 33%;
-    margin-bottom: 2.2rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  width: 33%;
+  margin-bottom: 2.2rem;
 }
 
 .nav-section-div-2 p {
-    text-align: start;
-    font-size: 1rem;
-    line-height: 1.6rem;
-    font-weight: 500;
-    margin: 0 0 2rem;
+  text-align: start;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
 }
 
 .nav-section-div-2-p {
-    margin-bottom: 1.3rem !important;
+  margin-bottom: 1.3rem !important;
 }
 
-.nav-section-div-3{
-    text-align: start;
+.nav-section-div-3 {
+  text-align: start;
 }
 
 .nav-section-div-3 a {
-    margin-bottom: 1rem;
-    text-decoration: none;
+  margin-bottom: 1rem;
+  text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   color: black;
-  display: flex; /* allows text and arrow side by side *//* Allows text + SVG alignment */
+  display: flex; /* allows text and arrow side by side */ /* Allows text + SVG alignment */
   align-items: center;
   gap: 0.8rem;
   transition: color 0.3s ease-in-out;
 }
 
-
-
 .nav-section-div-3 a:hover {
-    color: rgb(240 117 117);
+  color: rgb(240 117 117);
 }
 
 .right-arrow {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-section-div-2 a:hover .right-arrow {
-    transform: translateX(13px); 
+  transform: translateX(13px);
 }
-
 
 /* clinicals */
 .nav-section-2-p-1 {
-    width: 60%;
+  width: 60%;
 }
 
-
-
 .btn-clinicals {
-    margin: 0;
+  margin: 0;
 }
 
 /* owner */
 
-
 .nav-section-4-p-1 {
-    width: 70%;
+  width: 70%;
 }
 
-
-
-
 .nav-products-img {
-    background-image: url("/src/assets/img/cat-5.png");
-    background-size: cover;
-    background-position: 60px -3rem;
-    background-repeat: no-repeat;
-    background-color: rgb(238 237 221 );
-    height: 46rem;
-    padding: 2.3rem;
+  background-image: url("/src/assets/img/cat-5.png");
+  background-size: cover;
+  background-position: 60px -3rem;
+  background-repeat: no-repeat;
+  background-color: rgb(238 237 221);
+  height: 46rem;
+  padding: 2.3rem;
 }
 
 .cat-des-products {
-    text-align: start;
+  text-align: start;
 }
+
 

@@ -29,6 +29,31 @@ export default function Product() {
             </div>
      </div>
      <CatPipeline />
+
+<div>
+  <article>
+  <p>Extending lifespan by improving
+metabolic health in</p>
+<p>Senior cats</p>
+<div>
+  <div>
+  <p> Projected approval</p>
+ <p>2026*</p>
+
+  </div>
+  <div>
+    <p> Dosage form</p>
+ <p>Daily pill</p>
+
+  </div>
+</div>
+  </article>
+
+</div>
+<div>
+LOY-002
+</div>
+
     </section>
      
     
