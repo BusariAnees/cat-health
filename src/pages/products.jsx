@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import CatPipeline from  '../components/CatPipeline';
+import catImage from '../assets/img/cat-6.png';
 
 import "../assets/css/products.css";
 
@@ -30,29 +31,31 @@ export default function Product() {
      </div>
      <CatPipeline />
 
-<div>
-  <article>
-  <p>Extending lifespan by improving
-metabolic health in</p>
-<p>Senior cats</p>
-<div>
-  <div>
-  <p> Projected approval</p>
- <p>2026*</p>
+     <section className="pt-[9rem] pb-[7rem] px-[6rem] bg-white min-h-screen flex flex-col justify-center items-center">
+      <div className=" w-full text-center">
+        <p className="text-lg text-gray-600 mb-2">Extending lifespan by improving metabolic health in</p>
+        <h1 className="text-5xl font-bold text-gray-900 mb-6">Senior cats</h1>
 
-  </div>
-  <div>
-    <p> Dosage form</p>
- <p>Daily pill</p>
+        <div className="flex justify-center gap-12 text-sm text-gray-700 mb-10">
+          <div>
+            <p className="font-semibold">PROJECTED APPROVAL</p>
+            <p>2026<span className="text-xs">*</span></p>
+          </div>
+          <div>
+            <p className="font-semibold">DOSAGE FORM</p>
+            <p>Daily pill</p>
+          </div>
+        </div>
 
-  </div>
-</div>
-  </article>
+        <div className=" bg-beige-light  overflow-hidden shadow-lg w-full"  style={{
+    background: 'linear-gradient(to right, rgb(209, 189, 164), rgb(166 129 92))',
+  }}>
+          <img src={catImage} alt="Dog and human high five" className="w-full object-cover  h-[31rem]" />
+        </div>
 
-</div>
-<div>
-LOY-002
-</div>
+        <p className="text-xs text-gray-400 mt-2">*FDA approval not guaranteed</p>
+      </div>
+    </section>
 
     </section>
      

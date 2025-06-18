@@ -6,7 +6,11 @@ export default {
       "./src/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
-      extend: {},
+      extend: {
+        backgroundImage: {
+          'beige-light': '    background: linear-gradient(to right, rgb(209, 189, 164), rgb(166 129 92))',
+        },
+      },
     },
     plugins: [],
   }
