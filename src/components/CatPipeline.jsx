@@ -72,7 +72,7 @@ export default function CatPipeline() {
           </div>
         ))}
 
-        <p className="text-xs text-gray-500  text-start mt-[2.5rem]">
+        <p className="text-xs text-[#c2c2c2] text-opacity-100 font-medium  text-start mt-[2.5rem]">
           *FDA approval not guaranteed
         </p>
       </div>

@@ -5,9 +5,6 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  border-width: 0px;
-  border-style: solid;
-  border-color: rgb(229, 231, 235);
   border-image: initial;
 }
 
@@ -227,6 +224,10 @@ body {
 .hero-div-footer {
   margin-top: 3.5rem;
 
+}
+
+.hero-div-footer img{
+  margin: auto;
 }
 
 .hero-div-footer p {
