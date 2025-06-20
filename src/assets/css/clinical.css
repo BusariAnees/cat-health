@@ -1,0 +1,10 @@
+.nav-clinicals-img {
+    background-image: url("/src/assets/img/cat-8.jpg");
+    background-size: cover;
+    height: 46rem;
+    padding: 2.3rem;
+  }
+
+  .btn-clinicals {
+    margin: 0!important;
+  }

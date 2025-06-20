@@ -308,13 +308,11 @@ export default function Product() {
                     className="flex items-center justify-center"
                     style={{ gridColumnEnd: "span 1" }}
                   >
-                   <hr
-  className={`w-full origin-left border-gray-300 ${
-    step.status === "in-progress" || step.status === "pending"
-      ? "border-dashed animate-grow"
-      : "animate-grow"
-  }`}
-/>
+                    <hr
+                      className={`w-full ${
+                        step.status === "in-progress" || step.status ===  "pending" ? "border-dashed" : ""
+                      } border-gray-300`}
+                    />
                   </div>
                 )}
               </React.Fragment>
