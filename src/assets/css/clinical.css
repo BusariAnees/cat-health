@@ -8,3 +8,7 @@
   .btn-clinicals {
     margin: 0!important;
   }
+
+  .nav-clinicals-9-img {
+    background-image: url("/src/assets/img/cat-9.jpg")!important;
+  }
