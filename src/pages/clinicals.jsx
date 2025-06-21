@@ -1,5 +1,6 @@
 import Header from "../header";
 import Map from "../components/map.jsx";
+import Questions from "../components/Q&A";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -101,7 +102,7 @@ export default function Clinicals() {
                     className="h-[1.2rem] text-black"
                   />{" "}
                   <p className="font-[500] text-[0.9rem]">
-                    Advance science for dogs everywhere
+                    Advance science for cats everywhere
                   </p>
                 </div>
               </ul>
@@ -167,6 +168,8 @@ export default function Clinicals() {
             <p className="cat-age"> Age 10</p>
           </div>
         </div>
+
+        <Questions/>
       </section>
     </>
   );
