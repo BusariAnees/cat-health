@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer (){
  return (
@@ -18,7 +19,7 @@ export default function Footer (){
         </div>
 <div className="footer-ground">
 <p >© 2025 Cellular Longevity, Inc.</p>
-          {/* <FontAwesomeIcon className="awesome-icon" icon={faXTwitter} /> */}
+          <FontAwesomeIcon className="awesome-icon" icon={faXTwitter} />
           <p>Privacy Policy</p>
 </div>
 
