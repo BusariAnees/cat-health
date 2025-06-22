@@ -38,7 +38,7 @@ export default function Clinicals() {
   <div className="nav-clinicals-img relative">
     {[
       { name: "looney", age: 8, position: "bottom-[1rem] left-[1rem]" },
-      { name: "lexi", age: 10, position: "top-[1rem] right-[2rem]" },
+      { name: "lexi", age: 10, position: "top-[2rem] right-[2rem]" },
     ].map((cat, i) => (
       <div key={i} className={`cat-des-products absolute ${cat.position}`}>
         <p className="cat-name">{cat.name}</p>
@@ -102,9 +102,9 @@ export default function Clinicals() {
         <Map />
 
         <div className="nav-clinicals-img nav-clinicals-9-img relative">
-          <div className="cat-des-products absolute bottom-[1rem] right-[2rem]">
-            <p className="cat-name">karma</p>
-            <p className="cat-age"> Age 10</p>
+          <div className="cat-des-products absolute bottom-[2rem] left-[2rem]">
+            <p className="cat-name text-white">karma</p>
+            <p className="cat-age text-white"> Age 10</p>
           </div>
         </div>
 

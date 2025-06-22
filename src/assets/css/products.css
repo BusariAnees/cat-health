@@ -44,7 +44,7 @@
   font-size: 1rem;
   font-weight: 500;
   color: black;
-  display: flex; /* allows text and arrow side by side */ /* Allows text + SVG alignment */
+  display: flex; 
   align-items: center;
   gap: 0.8rem;
   transition: color 0.3s ease-in-out;
