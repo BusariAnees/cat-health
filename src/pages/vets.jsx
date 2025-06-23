@@ -1,4 +1,6 @@
 import Header from "../header";
+import Footer from "../footer";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -48,6 +50,26 @@ const publications = [
     title: "Evaluating instruments for assessing healthspan: a multi-center cross-sectional study on health-related quality of life (HRQL) and frailty in the dog.",
      author1:"Chen FL, Ullal TV, Graves JL, Ratcliff ER, Naka A, McKenzie B, Carttar TA, Super KM, Austriaco J, Weber SY, Vaughn J, LaCroix-Fralish ML. Evaluating instruments for assessing healthspan: a multi-center cross-sectional study on health-related quality of life (HRQL) and frailty in the companion dog. GeroScience. 2023 Feb 13."
   },
+  {
+    journal: "AVMA",
+    date: "June 2022",
+    title: "The phenotype of aging in the cat: how aging impacts the health and well-being of cats and their caregivers    ",
+    author1:"McKenzie BA, Chen FL, LaCroix-Fralish ML. The phenotype of aging in the dog: how aging impacts the health and well-being of dogs and their caregivers. AVMA. 2022 Jun 1;260(9):963-70."
+  },
+  {
+    journal: "AVMA",
+    date: "June 2022",
+    title: "Comparative veterinary geroscience: mechanism of molecular, cellular, and tissue aging in humans, laboratory animal models, and companion dogs and cats",
+     author1:"McKenzie BA. Comparative veterinary geroscience: mechanism of molecular, cellular, and tissue aging in humans, laboratory animal models, and companion dogs and cats. AJVR. 2022 Jun 1;83(6)."
+  },
+  {
+    journal: "frontiers",
+    date: "April 2022",
+    title: "Fenine Geriatric Syndrome: A Framework for Advancing Research in Veterinary Geroscience",
+    author1: "McKenzie BA, Chen FL, Gruen ME, Olby NJ. Canine Geriatric Syndrome: A Framework for Advancing Research in Veterinary Geroscience. Front. Vet. Sci. 2022 April 21;9:853743."
+  },
+
+
 ];
 
 
@@ -261,7 +283,7 @@ export default function Vets() {
                 {pub.date && <p className="text-xs text-gray-600 my-5">{pub.date}</p>}
                 <p className="font-semibold text-[0.95rem] leading-snug mb-2">{pub.title}</p>
                 {pub.authors && <p className="text-sm text-gray-700">{pub.authors}</p>}
-                {pub.author1 && <p className="text-sm text-gray-700">{pub.author1}</p>}
+                {pub.author1 && <p className="mt-6 text-[0.6rem] text-gray-700">{pub.author1}</p>}
                 {pub.reference && <p className="text-sm text-gray-700">{pub.reference}</p>}
                 {pub.link && (
                   
@@ -282,6 +304,8 @@ export default function Vets() {
         ))}
       </div>
     </section>
+
+   <Footer/>
 
       </section>
     </>
