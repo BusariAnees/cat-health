@@ -4,3 +4,11 @@
     height: 46rem;
     padding: 2.3rem;
   }
+
+
+  .nav-owner-1-img {
+    background-image: url("/src/assets/img/cat-12.jpg");
+    background-size: cover;
+    height: 40rem;
+    padding: 2.3rem;
+  }
