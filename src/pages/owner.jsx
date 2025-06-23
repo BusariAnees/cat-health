@@ -1,11 +1,22 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faKitMedical } from "@fortawesome/free-solid-svg-icons";
+
+import { useState, useEffect } from "react";
 
 import "../assets/css/products.css";
 import "../assets/css/owner.css";
 
+const words = ["walks", "fetch", "days", "purrs"];
+
 export default function Owner() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, 2000); // change every 2 seconds
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       <section>
@@ -81,6 +92,7 @@ export default function Owner() {
            {/* Images with captions */}
      
         </section>
+       
         <div
           className="nav-owner-1-img relative bg-center h-52rem "
           style={{ height: "52rem" }}
@@ -98,6 +110,23 @@ export default function Owner() {
           )}
         </div>
       </section>
+      <div className="h-screen bg-[#f5e7cf] flex items-center justify-center text-6xl font-semibold">
+      <span className="flex gap-4">
+        More{" "}
+        <span className="relative h-[72px] overflow-hidden inline-block leading-[72px]">
+          <span
+            className="absolute left-0 top-0 transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateY(-${index * 72}px)` }}
+          >
+            {words.map((word, i) => (
+              <div key={i} className="h-[72px] italic text-[#1a1a1a]">
+                {word}
+              </div>
+            ))}
+          </span>
+        </span>
+      </span>
+    </div>
     </>
   );
 }
