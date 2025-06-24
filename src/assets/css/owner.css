@@ -12,3 +12,46 @@
     height: 40rem;
     padding: 2.3rem;
   }
+
+  .scroll-font {
+
+  }
+
+  /* Keyframe animation */
+  @keyframes scrollWords {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-640px); /* 4 words * 160px */
+    }
+  }
+  
+
+  .scroll-container {
+    
+    height: 160px;              /* height of one word */
+    width: 420px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .scroll-content {
+    font-family: "Libre Baskerville", serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: scrollWords 20s linear infinite;
+  }
+  
+  .scroll-item {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    font-size: 8rem;
+    font-style: italic;
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+  }
+  
