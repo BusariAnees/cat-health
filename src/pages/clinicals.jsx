@@ -1,7 +1,7 @@
-import Header from "../header";
+import Header from "../includes/header";
 import Map from "../components/map.jsx";
 import Questions from "../components/Q&A";
-import Footer from "../footer";
+import Footer from "../includes/footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";

@@ -1,6 +1,6 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Footer from "./footer";
+import Footer from "./includes/footer";
 
 
 export default function Sections() {

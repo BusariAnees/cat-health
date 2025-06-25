@@ -39,13 +39,49 @@
 }
 
 
+.div-dsp {
+  border-block: 0.5px solid rgb(74, 95, 131);
+  padding:  0;
+  color: white;
+  text-decoration: none;
+ 
+}
+
+
+
+
+.div-dsp:hover {
+  background-color:rgb(24,30,40) ;
+}
+
+.div-dsp:hover .article-dsp {
+  filter: brightness(0.9);
+  transform: scale(0.92);
+}
 
 .article-dsp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 2.5rem;
+  transition: transform 0.3s ease-in-out ;
+  height: 100%;
+
+}
+
+
+
+.p-dsp {
   text-align: start;
   font-weight: 500;
   font-size: 1.5rem;
   color: #f7b843;
 }
+
+
+
+
+
 
 .overlay-ul {
   margin-right: 5rem;
@@ -55,15 +91,11 @@
   max-height: 40rem;
 }
 
-.overlay-ul a {
-  border-block: 0.5px solid rgb(74, 95, 131);
-  padding: 2.5rem 0;
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
+
+
+
+
 
 .ul-dsp {
   width: 15rem;

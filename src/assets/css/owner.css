@@ -13,9 +13,6 @@
     padding: 2.3rem;
   }
 
-  .scroll-font {
-
-  }
 
   /* Keyframe animation */
   @keyframes scrollSmoothPause {
@@ -53,7 +50,7 @@
     top: 0;
     left: 0;
     font-family: "Libre Baskerville", serif;
-    animation: scrollSmoothPause 20s ease-in-out infinite;
+    animation: scrollSmoothPause 10s ease-in-out infinite;
   }
   .scroll-item {
     height: 160px;

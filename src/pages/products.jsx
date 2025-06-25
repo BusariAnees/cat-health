@@ -1,7 +1,7 @@
 import React from "react";
 
-import Header from "../header";
-import Footer from "../footer";
+import Header from "../includes/header";
+import Footer from "../includes/footer";
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

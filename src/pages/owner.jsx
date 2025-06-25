@@ -3,7 +3,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import "../assets/css/products.css";
 import "../assets/css/owner.css";
-import Footer from "../footer";
+import Footer from "../includes/footer";
 
 import Scroll from "../components/word-scroll";
 

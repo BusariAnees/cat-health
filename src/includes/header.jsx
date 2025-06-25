@@ -11,10 +11,10 @@ import {Link} from "react-router-dom";
              <div className="header-nav-container">
                <nav className="header-nav">
                <NavLink to="/products">Products</NavLink>
-            <NavLink to="/clinical">Clinical trials</NavLink>
-            <NavLink to="/vets">For vets</NavLink>
-            <NavLink to="/owner">For cat owners</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="/clinical">Clinical &nbsp;trials</NavLink>
+            <NavLink to="/vets">For&nbsp;vets</NavLink>
+            <NavLink to="/owner">For&nbsp;cat&nbsp;owners</NavLink>
+           
                </nav>
              
              </div>

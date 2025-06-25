@@ -8,10 +8,9 @@ import "./assets/css/footer.css";
 
 import Overlay from "./overlay";
 import Section from './sections';
-import Header from "./header"
+import Header from "./includes/header"
 
 import Products from "./pages/products";
-import Blog from "./pages/blog";
 import Clinicals from "./pages/clinicals";
 import Vets from "./pages/vets";
 import Owner from "./pages/owner";
@@ -79,7 +78,6 @@ function App() {
         <Route path="/clinical" element={<Clinicals />} />
         <Route path="/vets" element={<Vets />} />
         <Route path="/owner" element={<Owner />} />
-        <Route path="/blog" element={<Blog />} />
       </Routes>
     </>
   );
