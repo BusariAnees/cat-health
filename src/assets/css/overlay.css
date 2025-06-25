@@ -27,6 +27,21 @@
   z-index: 999;
 }
 
+.overlay-ul {
+  margin-right: 5rem;
+  width: 50%;
+  padding-top: 2rem;
+  scrollbar-width: none;
+  padding-bottom: 5rem;
+
+}
+
+.overlay-ul::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+
+
 .overlay-logo {
   color: #c2c2c2;
 }
@@ -40,11 +55,11 @@
 
 
 .div-dsp {
-  border-block: 0.5px solid rgb(74, 95, 131);
+  border-top: 0.5px solid rgb(74, 95, 131);
   padding:  0;
   color: white;
   text-decoration: none;
- 
+  padding: 2.5rem 0;
 }
 
 
@@ -63,7 +78,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-block: 2.5rem;
   transition: transform 0.3s ease-in-out ;
   height: 100%;
 
@@ -82,14 +96,6 @@
 
 
 
-
-.overlay-ul {
-  margin-right: 5rem;
-  width: 50%;
-  padding-top: 2rem;
-  overflow: hidden;
-  max-height: 40rem;
-}
 
 
 

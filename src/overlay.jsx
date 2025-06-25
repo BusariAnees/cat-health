@@ -1,9 +1,9 @@
 export default function Overlay(props) {
   return (
     <>
-     <div className="overlay-section-div">
+     <div className="overlay-section-div o">
   <div className="header-logo overlay-logo">Meown</div>
-  <div className="overlay-ul">
+  <div className="overlay-ul h-screen overflow-y-auto">
     <a href="" className="link-dsp">
       <div className="div-dsp">
         <article className="article-dsp">
@@ -76,16 +76,7 @@ export default function Overlay(props) {
       </div>
     </a>
 
-    <a href="" className="link-dsp">
-      <div className="div-dsp">
-        <article className="article-dsp">
-          <p className="p-dsp">Blog</p>
-          <ul className="ul-dsp">
-            <li>Learn more about aging health in cats</li>
-          </ul>
-        </article>
-      </div>
-    </a>
+  
 
     <a href="" className="link-dsp">
       <div className="div-dsp">
