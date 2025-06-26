@@ -1,9 +1,9 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "./includes/footer";
+import { NavLink } from "react-router-dom";
 
-
-export default function Sections() {
+export default function Sections({setShowModal}) {
   return (
     <>
       <section className="body-section">
@@ -89,66 +89,73 @@ export default function Sections() {
               </ul>
             </article>
           </div>
-          <button className="btn-connected ">
+
+          <NavLink to="/products" className="btn-connected !m-0 ">
+            {" "}
             <a className="btn-connected-a" href="">
               {" "}
               Explore our products
             </a>
             <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
-          </button>
+          </NavLink>
         </div>
       </section>
-
-
 
       <section className="body-section section-3">
-        <div  className="section-4-1">
+        <div className="section-4-1">
           <div className="div-section-3 ">
             <div className="image-div image-3-div">
-            <p className="cat-name">Sebastian</p>
-            <p className="cat-age"> Age 10</p>
+              <p className="cat-name">Sebastian</p>
+              <p className="cat-age"> Age 10</p>
             </div>
-           <div className="des-3-div">
-            <p className="des-3-p-1">STAY - our new clinical study for LOY‑002</p>
-            <p className="des-3-p-2">We’ve launched a major new clinical study for LOY‑002, our drug to extend lifespan and maintain quality of life in senior cats of nearly all sizes. We’re enrolling 1,300 senior cats at 70 veterinary clinics across the country. See if your cat qualifies to participate.</p>
-            <button className="btn-connected ">
-          <a className="btn-connected-a" href="">
-            {" "}
-            Explore our products
-          </a>
-          <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
-        </button>
-           </div>
-
+            <div className="des-3-div">
+              <p className="des-3-p-1">
+                STAY - our new clinical study for LOY‑002
+              </p>
+              <p className="des-3-p-2">
+                We’ve launched a major new clinical study for LOY‑002, our drug
+                to extend lifespan and maintain quality of life in senior cats
+                of nearly all sizes. We’re enrolling 1,300 senior cats at 70
+                veterinary clinics across the country. See if your cat qualifies
+                to participate.
+              </p>
+              <NavLink to="/products" className="btn-connected !m-0 ">
+                {" "}
+                <a className="btn-connected-a" href="">
+                  {" "}
+                  Explore our products
+                </a>
+                <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
+              </NavLink>
+            </div>
           </div>
-
-  
         </div>
-
-     
       </section>
-
 
       <section className="body-section section-4">
         <div className="section-4-div">
           <p className="des-4-p">VETERINARY PROFESSSIONALS</p>
-          <p className="des-3-p-1 des-4-p-2">Explore what our longevity therapies will mean for your patients and your practice.</p>
-           <button className="btn-connected ">
-          <a className="btn-connected-a" href="">
-            {" "}
-            Learn more
-          </a>
-          <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
-        </button>
+          <p className="des-3-p-1 des-4-p-2">
+            Explore what our longevity therapies will mean for your patients and
+            your practice.
+          </p>
 
+          <NavLink to="/clinical" className="btn-connected !m-0 ">
+            {" "}
+            <a className="btn-connected-a" href="">
+              {" "}
+              Learn more
+            </a>
+            <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
+          </NavLink>
         </div>
         <div className="image-div image-4-div">
-            <p className="cat-name cat-name-4">Lucy</p>
-            <p className="cat-age"> Age 10</p>
-            </div>
+          <p className="cat-name cat-name-4">Lucy</p>
+          <p className="cat-age"> Age 10</p>
+        </div>
       </section>
 
-     <Footer/>
+      <Footer setShowModal={setShowModal} />
     </>
   );
 }

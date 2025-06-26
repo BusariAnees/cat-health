@@ -62,7 +62,7 @@ body {
   margin-top: 2rem;
 
   position: relative;
-  z-index: 1000; /* higher than overlay when overlay hidden */
+  z-index: 1000; 
   display: flex;
   align-items: center;
   justify-content: space-between;
