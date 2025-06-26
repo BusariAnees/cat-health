@@ -1,4 +1,4 @@
-export default function Map() {
+export default function Map({setShowModal}) {
   return (
     <>
       <section>

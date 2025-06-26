@@ -74,7 +74,7 @@ const publications = [
 
 
 
-export default function Vets() {
+export default function Vets({setShowModal}) {
   return (
     <>
       <section>
@@ -87,13 +87,14 @@ export default function Vets() {
               Be the first to know as we release <br /> more details on our
               products in <br /> development.
             </p>
-            <button className="btn-connected btn-clinicals">
-              <a className="btn-connected-a" href="">
-                {" "}
-                Stay connected
-              </a>
-              <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
-            </button>
+
+      <button
+            className="btn-connected !m-0"
+            onClick={() => setShowModal(true)}
+          >
+            <span className="btn-connected-a">Stay connected</span>
+            <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
+          </button>
           </div>
         </div>
 
@@ -305,7 +306,7 @@ export default function Vets() {
       </div>
     </section>
 
-   <Footer/>
+   <Footer  setShowModal={setShowModal}/>
 
       </section>
     </>

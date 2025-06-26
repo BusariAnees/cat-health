@@ -16,7 +16,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import "../assets/css/products.css";
 import "../assets/css/clinical.css";
 
-export default function Clinicals() {
+export default function Clinicals({setShowModal}) {
   return (
     <>
       <section>
@@ -27,10 +27,14 @@ export default function Clinicals() {
       <p className="nav-section-div-2-p">
         Join our STAY study to help dogs <br /> live longer, healthier lives.
       </p>
-      <button className="btn-connected btn-clinicals">
-        <a className="btn-connected-a" href="">Join the STAY study</a>
-        <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
-      </button>
+    
+      <button
+            className="btn-connected !m-0"
+            onClick={() => setShowModal(true)}
+          >
+            <span className="btn-connected-a">join&nbsp;the&nbsp;STAY&nbsp;study</span>
+            <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
+          </button>
     </div>
   </div>
 
@@ -57,10 +61,16 @@ export default function Clinicals() {
       <p className="py-[1.2rem]">
         Enrollment opens soon across the country. Use the map below to find a site near you.
       </p>
-      <button className="btn-connected btn-clinicals">
-        <a className="btn-connected-a" href="">join&nbsp;the&nbsp;STAY&nbsp;study</a>
-        <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
-      </button>
+      
+
+      <button
+            className="btn-connected !m-0"
+            onClick={() => setShowModal(true)}
+          >
+            <span className="btn-connected-a">join&nbsp;the&nbsp;STAY&nbsp;study</span>
+            <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
+          </button>
+
     </div>
 
     {/* Benefits & Requirements */}
@@ -108,8 +118,8 @@ export default function Clinicals() {
           </div>
         </div>
 
-        <Questions/>
-        <Footer/>
+        <Questions setShowModal={setShowModal}/>
+        <Footer setShowModal={setShowModal} />
       </section>
     </>
   );

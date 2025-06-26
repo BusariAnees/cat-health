@@ -54,7 +54,7 @@ const faqs = [
 ]
 
 
-export default function Questions () {
+export default function Questions ({setShowModal}) {
 
     const [openIndex, setOpenIndex] = useState(null);
     
@@ -72,13 +72,13 @@ export default function Questions () {
             <p className="py-[1.2rem]">
             Thanks for your interest in this clinical trial. <br /> Your participation is an important step in <br /> getting innovative, safe, and effective <br /> medications approved for cats.
             </p>
-            <button className="btn-connected btn-clinicals ">
-              <a className="btn-connected-a" href="">
-                {" "}
-                join&nbsp;the&nbsp;STAY&nbsp;study
-              </a>
-              <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
-            </button>
+            <button
+            className="btn-connected !m-0"
+            onClick={() => setShowModal(true)}
+          >
+            <span className="btn-connected-a">join&nbsp;the&nbsp;STAY&nbsp;study</span>
+            <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
+          </button>
           </div>
 
           <article className="w-[50%] mx-auto">

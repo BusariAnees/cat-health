@@ -61,21 +61,22 @@ function App() {
         />
         <Route path="/clinical" element={
         <>
+        
          <Header isActive={isActive} setIsActive={setIsActive} />
-         <Clinicals />
+         <Clinicals   setShowModal={setShowModal} />
         </>
         
        } />
         <Route path="/vets" element={
         <>
             <Header isActive={isActive} setIsActive={setIsActive} />
-         <Vets />
+         <Vets  setShowModal={setShowModal}/>
         </>
         
       } />
         <Route path="/owner" element={<>
           <Header isActive={isActive} setIsActive={setIsActive} />
-          <Owner />
+          <Owner setShowModal={setShowModal}/>
         </>} />
       </Routes>
  

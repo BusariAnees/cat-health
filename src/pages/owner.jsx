@@ -50,7 +50,7 @@ const QA = [
   },
 ];
 
-export default function Owner() {
+export default function Owner({setShowModal}) {
   return (
     <>
       <section>
@@ -147,7 +147,7 @@ export default function Owner() {
             ))}
           </div>
         </section>
-        <Footer />
+        <Footer  setShowModal={setShowModal}/>
       </section>
     </>
   );
