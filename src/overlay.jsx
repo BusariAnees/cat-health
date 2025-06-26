@@ -1,7 +1,7 @@
 export default function Overlay(props) {
   return (
     <>
-     <div className="overlay-section-div o">
+     <div className={`overlay-section-div ${props.isActive ? 'opacity-100' : 'opacity-0 invisible '} `}>
   <div className="header-logo overlay-logo">Meown</div>
   <div className="overlay-ul h-screen overflow-y-auto">
     <a href="" className="link-dsp">
