@@ -54,28 +54,38 @@ function App() {
           path="/products"
           element={
             <>
-              <Header isActive={isActive} setIsActive={setIsActive} />
+            <div className="px-[4.5rem]">
+            <Header isActive={isActive} setIsActive={setIsActive} />
+            </div>
               <Products />
+          
+             
             </>
           }
         />
         <Route path="/clinical" element={
         <>
-        
-         <Header isActive={isActive} setIsActive={setIsActive} />
+           <div className="px-[4.5rem]">
+            <Header isActive={isActive} setIsActive={setIsActive} />
+            </div>
          <Clinicals   setShowModal={setShowModal} />
         </>
         
        } />
         <Route path="/vets" element={
         <>
+             <div className="px-[4.5rem]">
             <Header isActive={isActive} setIsActive={setIsActive} />
+            </div>
          <Vets  setShowModal={setShowModal}/>
         </>
         
       } />
         <Route path="/owner" element={<>
-          <Header isActive={isActive} setIsActive={setIsActive} />
+
+          <div className="px-[4.5rem]">
+            <Header isActive={isActive} setIsActive={setIsActive} />
+            </div>
           <Owner setShowModal={setShowModal}/>
         </>} />
       </Routes>

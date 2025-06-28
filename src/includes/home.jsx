@@ -17,8 +17,9 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function Home({ setShowModal, isActive, setIsActive }) {
   return (
     <div className="hero-wrapper relative">
-      <Header isActive={isActive} setIsActive={setIsActive} />
+    
       <section className="main-section">
+      <Header isActive={isActive} setIsActive={setIsActive} />
         <div className="hero-content">
           <h1 className="hero-heading">
             More time <br /> with the cats <br /> we love

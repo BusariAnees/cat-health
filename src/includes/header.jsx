@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
         <div className="header-div">
            <header className="header">
              <Link to="/" className="header-logo">Meown</Link>
-             <div className="header-nav-container">
+             
                <nav className="header-nav">
                <NavLink to="/products">Products</NavLink>
             <NavLink to="/clinical">Clinical &nbsp;trials</NavLink>
@@ -17,15 +17,16 @@ import {Link} from "react-router-dom";
            
                </nav>
              
-             </div>
+           
            </header>
-             <div
+           <div
                  className={`hamburger ${isActive ? "active" : ""}`}
                  onClick={() => setIsActive(!isActive)}
                >
                  <span></span>
                  <span></span>
                </div>
+          
            </div>
        </>
     )

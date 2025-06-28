@@ -92,10 +92,11 @@ export default function Sections({setShowModal}) {
 
           <NavLink to="/products" className="btn-connected !m-0 ">
             {" "}
-            <a className="btn-connected-a" href="">
+            <p className="btn-connected-a">
               {" "}
               Explore our products
-            </a>
+            </p>
+           
             <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
           </NavLink>
         </div>
@@ -121,10 +122,11 @@ export default function Sections({setShowModal}) {
               </p>
               <NavLink to="/products" className="btn-connected !m-0 ">
                 {" "}
-                <a className="btn-connected-a" href="">
-                  {" "}
-                  Explore our products
-                </a>
+
+                <p className="btn-connected-a">
+              {" "}
+              Explore our products
+            </p>
                 <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
               </NavLink>
             </div>
@@ -142,10 +144,10 @@ export default function Sections({setShowModal}) {
 
           <NavLink to="/clinical" className="btn-connected !m-0 ">
             {" "}
-            <a className="btn-connected-a" href="">
+            <p className="btn-connected-a">
               {" "}
               Learn more
-            </a>
+            </p>
             <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
           </NavLink>
         </div>
