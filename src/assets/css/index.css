@@ -128,8 +128,8 @@ body {
 
 .hamburger {
   position: fixed;
-  top: 3rem;
-  right: 3rem;
+  top: 3.5rem;
+  right: 4.5rem;
   width: 30px;
   height: 25px;
   display: flex;
@@ -186,7 +186,7 @@ body {
   background: rgb(31, 41, 54);
   border-radius: 10rem;
   height: 3rem;
-  width: 16rem;
+  width: 15rem;
   justify-content: space-between;
   padding: 0 1rem;
 }
@@ -211,7 +211,7 @@ body {
 }
 
 .hero-div-footer {
-  margin-top: 3.5rem;
+  margin-top: 4.5rem;
 }
 
 .hero-div-footer img {
@@ -238,4 +238,42 @@ body {
 .cat-age {
   font-size: 0.8rem;
   margin: 0px !important;
+}
+
+
+/* Mobile: max-width 639px */
+
+@media (max-width: 639px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+
+/* Tablet: max-width 1024px */
+
+@media (max-width: 1050px) {
+  .header-nav {
+    display: none;
+  }
+
+  .main-section {
+   background-position: 40px;
+  }
+
+  .hero-heading {
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+    margin: 0;
+    letter-spacing: -1px;
+    transform: none;
+  }
+
+  .hero-div-footer {
+    margin-top: 9rem;
+}
+
+.body-section {
+  height: 40rem;
+}
 }

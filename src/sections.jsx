@@ -53,7 +53,7 @@ export default function Sections({setShowModal}) {
                 <li>
                   <strong>Target Audience:</strong> Cats aged 11 years and older
                 </li>
-                <li>
+                <li className="weight-li">
                   <strong>Minimum Weight:</strong> At least 8 lb (3.6 kg)
                 </li>
                 <li>
@@ -76,7 +76,7 @@ export default function Sections({setShowModal}) {
                 <li>
                   <strong>Target Audience:</strong> Cats aged 8 years and older,{" "}
                 </li>
-                <li>
+                <li className="weight-li">
                   <strong>Minimum Weight:</strong> At least 12 lb (5.4 kg)
                 </li>
                 <li>
@@ -105,9 +105,12 @@ export default function Sections({setShowModal}) {
       <section className="body-section section-3">
         <div className="section-4-1">
           <div className="div-section-3 ">
-            <div className="image-div image-3-div">
+            <div className="image-div image-3-div ">
+           
               <p className="cat-name">Sebastian</p>
               <p className="cat-age"> Age 10</p>
+           
+            
             </div>
             <div className="des-3-div">
               <p className="des-3-p-1">
@@ -152,8 +155,10 @@ export default function Sections({setShowModal}) {
           </NavLink>
         </div>
         <div className="image-div image-4-div">
+        <div className="cat-details">
           <p className="cat-name cat-name-4">Lucy</p>
           <p className="cat-age"> Age 10</p>
+          </div>
         </div>
       </section>
 

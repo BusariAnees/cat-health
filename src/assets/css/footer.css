@@ -2,12 +2,14 @@
     height: 40rem;
     background-color: rgb(31, 41, 54);
     padding: 2.3rem 4rem;
-  
+    position: relative;
 
 }
 
 .footer-ds {
-    margin: 7rem 0 0 43rem;
+    position: absolute;
+    top: 10rem;
+    right: 7rem;
     width: 25rem;
 
 }
@@ -44,7 +46,7 @@
 .footer-ground {
     display: flex;
     justify-content: space-between;
-    padding-top: 9rem;
+    margin-top: 34rem;
 }
 
 

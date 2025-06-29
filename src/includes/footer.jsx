@@ -29,9 +29,9 @@ export default function Footer({setShowModal}) {
         
         </div>
         <div className="footer-ground">
-          <p>© 2025 Cellular Longevity, Inc.</p>
+          <p className="footer-ab"> © 2025 Cellular Longevity, Inc.</p>
 
-          <div className="flex space-x-4 text-white text-2xl">
+          <div className="footer-ab flex space-x-4 text-white text-2xl">
             <a className="m-0" href="https://www.instagram.com/anees.andrews?igsh=MXZob2V0aDZ3Z2U4Yw==">
               {" "}
               <FontAwesomeIcon className="mx-[0.8rem]" icon={faXTwitter} />
@@ -49,7 +49,7 @@ export default function Footer({setShowModal}) {
               <FontAwesomeIcon className="mx-[0.8rem]" icon={faLinkedinIn} />
             </a>
           </div>
-          <p>Privacy Policy</p>
+          <p className="footer-ab">Privacy Policy</p>
         </div>
       </div>
     </>

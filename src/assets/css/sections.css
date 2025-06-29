@@ -28,6 +28,7 @@
   font-weight: 600;
   border-bottom: 1px solid black;
   padding-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .section-body-p {
@@ -54,10 +55,13 @@
   margin-right: 7rem;
   height: 40rem;
   text-align: end;
+  position: relative;
 }
 
 .section-2-1 div {
-  margin-top: 33rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
 }
 
 .section-body-h2 {
@@ -198,6 +202,7 @@
   padding: 2.3rem;
   height: 40rem;
   text-align: end;
+  position: relative;
 }
 
 
@@ -216,7 +221,108 @@
   margin: 0;
 }
 
-.cat-name-4 {
-  margin-top: 33rem !important;
+.cat-details {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+
+/* Mobile: max-width 639px */
+@media(max-width: 639px) {
+
+}
+
+
+/* Tablet: max-width 1024px */
+@media(max-width: 1050px) {
+  .body-section{
+    height: 40rem;
+  }
+
+  .section-1 {
+    padding: 7rem 6rem;
+  }
+
+  .section-2{
+    height: 50rem;
+  }
+  
+  .section-2-1{
+    height: 32rem;
+  }
+
+  .head-article{
+    white-space: nowrap;
+  }
+
+  .section-body-p-2 {
+    font-size: 3rem;
+  }
+
+  .section-2-ds {
+    white-space: nowrap;
+  }
+
+  .section-div-2 li {
+    margin: 0.5rem 0;
+  }
+
+  .section-div-2 li > strong {
+    white-space: nowrap;
+  }
+
+  .weight-li {
+    display: none;
+  }
+  .section-div-2 article{
+    margin-top: 0;
+  }
+
+  .section-2-1 div {
+    bottom: 1rem;
+  right: 1rem;
+  }
+
+  .article-2-2-ds{
+    margin-left:5rem
+  }
+
+  .image-3-div{
+    background-position: -10px -10rem;
+    width: 60%;
+  }
+
+  .section-4-1 {
+    height: 36rem;
+  }
+
+  .des-3-div{
+    flex-grow: 1;
+  }
+
+  .section-4{
+    padding: 0 7rem;
+  }
+
+  .image-4-div{
+    height: 30rem;
+    width: 40%;
+  }
+
+  .cat-name-4 {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .section-4-div {
+    width: 50%;
+  }
+
+  .footer-ds {
+    width: 28rem !important;
+}
+  
+  
 }
 
