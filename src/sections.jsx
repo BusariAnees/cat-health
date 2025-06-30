@@ -26,12 +26,7 @@ export default function Sections({setShowModal}) {
       </section>
 
       <section className="body-section section-2">
-        <div className="section-2-1">
-          <div>
-            <p className="cat-name">Tuna</p>
-            <p className="cat-age"> Age 8</p>
-          </div>
-        </div>
+    
 
         <div className="section-2-2">
           <h2 className="section-body-h1 section-body-h2">
@@ -99,6 +94,12 @@ export default function Sections({setShowModal}) {
            
             <FontAwesomeIcon className="awesome-icon" icon={faArrowRight} />
           </NavLink>
+        </div>
+        <div className="section-2-1">
+          <div>
+            <p className="cat-name">Tuna</p>
+            <p className="cat-age"> Age 8</p>
+          </div>
         </div>
       </section>
 
