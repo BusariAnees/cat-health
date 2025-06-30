@@ -124,7 +124,7 @@ export default function Sections({setShowModal}) {
                 veterinary clinics across the country. See if your cat qualifies
                 to participate.
               </p>
-              <NavLink to="/products" className="btn-connected !m-0 ">
+              <NavLink to="/products" className="btn-connected m-auto sm:!m-0 ">
                 {" "}
 
                 <p className="btn-connected-a">

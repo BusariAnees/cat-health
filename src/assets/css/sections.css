@@ -231,7 +231,7 @@
   }
 
   .section-1 {
-    padding: 7rem 6rem;
+    padding: 7rem 4rem;
   }
 
   .section-2 {
@@ -309,6 +309,7 @@
     width: 50%;
   }
 
+  
  
 }
 
@@ -323,9 +324,7 @@
     padding: 0.3rem 0;
   }
 
-  .btn-connected {
-  }
-
+  
   .hero-div-footer {
     margin-top: 20rem;
   }
@@ -344,22 +343,10 @@
     text-align: start;
   }
 
-  .overlay-section-div {
-    display: block;
-  }
 
-  .overlay-ul {
-    margin: 0;
-    width: 100%;
-  }
+  
 
-  .article-dsp {
-    display: block;
-  }
 
-  .div-dsp {
-    padding: 2rem 0;
-  }
   .p-dsp {
     margin-bottom: 1rem;
   }
@@ -440,7 +427,7 @@
 
   .section-4-1 {
     margin-top: 0;
-    height: 55rem;
+    height: 59rem;
   }
 
   .section-4-div {
@@ -452,6 +439,7 @@
     text-align: center;
   }
 
+
   .des-3-p-1 {
     line-height: 2.5rem;
     margin: 1rem 0 2rem;
@@ -460,6 +448,7 @@
 
   .section-4 {
     padding: 0 1.5rem;
+    height: 50rem;
   }
 
   .image-4-div {

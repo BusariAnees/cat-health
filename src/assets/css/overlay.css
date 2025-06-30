@@ -129,3 +129,32 @@
   margin-left: 0.5rem;
   color: rgb(74, 95, 131);
 }
+
+
+@media (max-width: 639px){
+
+.overlay{
+  padding: 2.3rem 1.5rem;
+}
+
+  .overlay-section-div {
+    display: block;
+  }
+
+  .div-dsp:hover {
+    background-color: default;
+  }
+
+  .overlay-ul {
+    margin: 0;
+    width: 100%;
+  }
+
+  .article-dsp {
+    display: block;
+  }
+
+  .div-dsp {
+    padding: 2rem 0;
+  }
+}

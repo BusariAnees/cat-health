@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 export default function Overlay(props) {
   return (
     <>
      <div className={`overlay-section-div ${props.isActive ? 'opacity-100' : 'opacity-0 invisible '} `}>
   <div className="header-logo overlay-logo">Meown</div>
   <div className="overlay-ul h-screen overflow-y-auto">
-    <a href="" className="link-dsp">
+    <NavLink to="/" className="link-dsp" onClick={() => props.setIsActive(false)}>  
       <div className="div-dsp">
         <article className="article-dsp">
           <p className="p-dsp">About us</p>
@@ -16,9 +18,10 @@ export default function Overlay(props) {
           </ul>
         </article>
       </div>
-    </a>
+    </NavLink>
+  
 
-    <a href="" className="link-dsp">
+    <NavLink to="/products"  className="link-dsp" onClick={() => props.setIsActive(false)}>
       <div className="div-dsp">
         <article className="article-dsp">
           <p className="p-dsp">Products</p>
@@ -30,9 +33,9 @@ export default function Overlay(props) {
           </ul>
         </article>
       </div>
-    </a>
+      </NavLink>
 
-    <a href="" className="link-dsp">
+      <NavLink to="/clinical"  className="link-dsp" onClick={() => props.setIsActive(false)}>
       <div className="div-dsp">
         <article className="article-dsp">
           <p className="p-dsp">Clinical trials</p>
@@ -44,9 +47,9 @@ export default function Overlay(props) {
           </ul>
         </article>
       </div>
-    </a>
+      </NavLink>
 
-    <a href="" className="link-dsp">
+      <NavLink to="/vets"  className="link-dsp" onClick={() => props.setIsActive(false)}>
       <div className="div-dsp">
         <article className="article-dsp">
           <p className="p-dsp">For vets</p>
@@ -59,9 +62,9 @@ export default function Overlay(props) {
           </ul>
         </article>
       </div>
-    </a>
+      </NavLink>
 
-    <a href="" className="link-dsp">
+      <NavLink to="/owner"  className="link-dsp" onClick={() => props.setIsActive(false)}>
       <div className="div-dsp">
         <article className="article-dsp">
           <p className="p-dsp">For cat owners</p>
@@ -74,11 +77,11 @@ export default function Overlay(props) {
           </ul>
         </article>
       </div>
-    </a>
+      </NavLink>
 
   
 
-    <a href="" className="link-dsp">
+      <NavLink to="/products"  className="link-dsp" onClick={() => props.setIsActive(false)}>
       <div className="div-dsp">
         <article className="article-dsp">
           <p className="p-dsp">Contact us</p>
@@ -89,7 +92,7 @@ export default function Overlay(props) {
           </ul>
         </article>
       </div>
-    </a>
+      </NavLink>
   </div>
 </div>
 
