@@ -178,7 +178,6 @@
   margin: 0;
 }
 
-
 .section-4 {
   padding: 0 10rem;
   display: flex;
@@ -190,10 +189,9 @@
   padding-block: 5rem;
 }
 
-.section-4-div p{
+.section-4-div p {
   font-weight: 500;
 }
-
 
 .image-4-div {
   background-image: url(/src/assets/img/cat-4.png);
@@ -207,12 +205,9 @@
   position: relative;
 }
 
-
-
 .des-4-p {
   color: rgb(240 117 117);
   font-size: 0.87rem;
- 
 }
 
 .des-4-p-2 {
@@ -229,12 +224,9 @@
   right: 2rem;
 }
 
-
-
-
 /* Tablet: max-width 1024px */
-@media(max-width: 1050px) {
-  .body-section{
+@media (max-width: 1050px) {
+  .body-section {
     height: 40rem;
   }
 
@@ -242,15 +234,15 @@
     padding: 7rem 6rem;
   }
 
-  .section-2{
+  .section-2 {
     height: 50rem;
   }
-  
-  .section-2-1{
+
+  .section-2-1 {
     height: 32rem;
   }
 
-  .head-article{
+  .head-article {
     white-space: nowrap;
   }
 
@@ -273,20 +265,20 @@
   .weight-li {
     display: none;
   }
-  .section-div-2 article{
+  .section-div-2 article {
     margin-top: 0;
   }
 
   .section-2-1 div {
     bottom: 1rem;
-  right: 1rem;
+    right: 1rem;
   }
 
-  .article-2-2-ds{
-    margin-left:5rem
+  .article-2-2-ds {
+    margin-left: 5rem;
   }
 
-  .image-3-div{
+  .image-3-div {
     background-position: -10px -10rem;
     width: 60%;
   }
@@ -295,15 +287,15 @@
     height: 36rem;
   }
 
-  .des-3-div{
+  .des-3-div {
     flex-grow: 1;
   }
 
-  .section-4{
+  .section-4 {
     padding: 0 7rem;
   }
 
-  .image-4-div{
+  .image-4-div {
     height: 30rem;
     width: 40%;
   }
@@ -317,34 +309,24 @@
     width: 50%;
   }
 
-  .footer-ds {
-    width: 28rem !important;
+ 
 }
-  
-  
-}
-
 
 /* Mobile: max-width 639px */
-@media(max-width: 639px) {
-
-  .main-section{
+@media (max-width: 639px) {
+  .main-section {
     padding: 1.3rem;
     background-position-x: 30px;
     background-position-y: 70px;
   }
-  .header{
+  .header {
     padding: 0.3rem 0;
   }
 
-
-
-
   .btn-connected {
- 
   }
 
-  .hero-div-footer{
+  .hero-div-footer {
     margin-top: 20rem;
   }
 
@@ -358,7 +340,6 @@
     line-height: 2.7rem;
   }
 
-
   .header-logo {
     text-align: start;
   }
@@ -367,7 +348,7 @@
     display: block;
   }
 
-  .overlay-ul{
+  .overlay-ul {
     margin: 0;
     width: 100%;
   }
@@ -376,11 +357,10 @@
     display: block;
   }
 
-
-  .div-dsp{
+  .div-dsp {
     padding: 2rem 0;
   }
-  .p-dsp{
+  .p-dsp {
     margin-bottom: 1rem;
   }
 
@@ -393,7 +373,7 @@
     padding: 6rem 1.5rem;
   }
 
-  .section-1-1{
+  .section-1-1 {
     width: 100%;
     height: 30rem;
   }
@@ -403,78 +383,89 @@
     margin: 0;
   }
 
-  .section-div-2{
+  .section-div-2 {
     display: block;
   }
-  
+
   .section-2 {
     padding: 7rem 1.5rem;
     height: 102rem;
-}
+  }
 
-.section-body-p-2 {
-  font-size: 2.5rem;
-  line-height: 2.8rem;
-  margin-bottom: 3rem;
-  margin-top: 0.5rem;
-}
+  .section-body-p-2 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+  }
 
-.article-2-ds {
-  width: 100%;
-  margin-bottom: 3rem;
-}
+  .article-2-ds {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
 
-.article-2-2-ds {
-  margin: 0;
-}
+  .article-2-2-ds {
+    margin: 0;
+  }
 
-.section-div-2 li > strong{
-  display: block;
-  margin-block: 0.3rem;
-}
- 
+  .section-div-2 li > strong {
+    display: block;
+    margin-block: 0.3rem;
+  }
 
-.article-2-ul{
-  margin-bottom: 3rem;
-}
+  .article-2-ul {
+    margin-bottom: 3rem;
+  }
 
-.section-2-1 {
-  width: 100%;
-  margin-top: 5rem;
-  margin-right: 0;
-}
+  .section-2-1 {
+    width: 100%;
+    margin-top: 5rem;
+    margin-right: 0;
+  }
 
-.section-3 {
-  margin-top: 0;
-}
+  .section-3 {
+    margin-top: 0;
+  }
 
-.image-3-div{
-  margin: 0;
-  width: 100%;
-  height: 27rem;
-  background-position: 10px;
-}
+  .image-3-div {
+    margin: 0;
+    width: 100%;
+    height: 27rem;
+    background-position: 10px;
+  }
 
-.div-section-3{
-  display: block;
-}
+  .div-section-3 {
+    display: block;
+  }
 
-.section-4-1 {
-  margin-top: 0;
+  .section-4-1 {
+    margin-top: 0;
     height: 55rem;
-}
+  }
 
-.des-3-div{
-  width: 100%;
-  text-align: center;
-}
+  .section-4-div {
+    width: 100%;
+  }
 
-.des-3-p-1 {
-  font-size: 1.7rem;
-  line-height: 2.5rem;
-  font-weight: 500;
+  .des-3-div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .des-3-p-1 {
+    line-height: 2.5rem;
+    margin: 1rem 0 2rem;
+    font-size: 2.5rem;
+  }
+
+  .section-4 {
+    padding: 0 1.5rem;
+  }
+
+  .image-4-div {
+    height: 15rem;
+    width: 100%;
+  }
+
  
-} 
-
-
 }

@@ -25,11 +25,11 @@ export default function Modals({ showModal, setShowModal }) {
           <div className="fixed inset-0 z-50 bg-[#000000a0] bg-opacity-50 flex justify-center items-center">
             <div className="text-start w-full max-w-4xl rounded-3xl overflow-hidden shadow-lg flex flex-col md:flex-row">
               {/* Left image */}
-              <div className="md:w-1/2 w-full  flex items-center justify-center relative">
+              <div className="hidden md:flex items-center justify-center relative md:w-1/2">
                 <img
                   src={Image}
                   alt="Anna the cat"
-                  className="w-full h-full object-cover"
+                  className=" w-full h-full object-cover"
                 />
                 <div className="absolute text-white bottom-[2rem] right-[2rem] text-sm font-semibold">
                   Anna
@@ -39,7 +39,7 @@ export default function Modals({ showModal, setShowModal }) {
               </div>
 
               {/* Right content */}
-              <div className="md:w-1/2 w-full p-8 relative b bg-[#f7f5ed] ">
+              <div className="rounded-t-[1rem] absolute bottom-0 h-[35rem] md:w-1/2 sm:w-full p-8 b bg-[#f7f5ed] sm:relative sm:rounded-tl-none ">
                 <button
                   onClick={() => setShowModal(false)}
                   className="absolute top-4 right-4 text-xl text-gray-500 hover:text-black"
@@ -47,7 +47,7 @@ export default function Modals({ showModal, setShowModal }) {
                   <FontAwesomeIcon icon={faXmark} />
                 </button>
 
-                <h2 className="text-3xl font-bold text-gray-800 mb-3">
+                <h2 className="font-medium pt-8 text-[2.5rem] sm:text-3xl sm:font-bold text-gray-800 mb-3">
                   Be the first to know
                 </h2>
                 <p className="text-gray-600 mb-6">
