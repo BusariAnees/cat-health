@@ -54,7 +54,7 @@ function App() {
           path="/products"
           element={
             <>
-            <div className="px-[4.5rem]">
+            <div className=" p-[1.5rem] m:px-[4.5rem]">
             <Header isActive={isActive} setIsActive={setIsActive} />
             </div>
               <Products />
@@ -65,7 +65,7 @@ function App() {
         />
         <Route path="/clinical" element={
         <>
-           <div className="px-[4.5rem]">
+           <div className="p-[1.5rem] m:px-[4.5rem]">
             <Header isActive={isActive} setIsActive={setIsActive} />
             </div>
          <Clinicals   setShowModal={setShowModal} />

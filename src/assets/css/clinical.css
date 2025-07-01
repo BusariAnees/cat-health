@@ -12,3 +12,28 @@
   .nav-clinicals-9-img {
     background-image: url("/src/assets/img/cat-9.jpg")!important;
   }
+
+
+ /* Tablet: max-width 1024px */
+
+ @media (max-width: 1050px) {
+
+ }
+
+
+/* Mobile: max-width 639px */
+
+  @media(max-width:638px){
+    .nav-clinicals-img{
+      height: 23rem;
+}
+
+.cat-des-products{
+  color: white;
+}
+
+  }
+
+
+
+ 

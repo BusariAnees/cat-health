@@ -17,7 +17,9 @@ const steps = [
 
 export default function CatPipeline() {
   return (
-    <div className="bg-[#f8f7f2] pt-18 pb-12 px-40 font-sans">
+    <div className="overflow-x-auto w-full">
+  <div className="min-w-[700px]"> 
+    <div className="pipeline_flow  bg-[#f8f7f2] pt-18 pb-12 px-40 font-sans">
       <h2 className="text-4xl font-bold mb-0 text-left pb-8 !border-b-1 !border-black border-solid ">
         Pipeline overview
       </h2>
@@ -77,5 +79,7 @@ export default function CatPipeline() {
         </p>
       </div>
     </div>
+    </div>
+</div>
   );
 }

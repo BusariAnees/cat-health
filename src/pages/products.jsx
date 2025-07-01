@@ -88,40 +88,41 @@ export default function Product() {
         <CatPipeline />
 
         <section id="senior" className="pt-[9rem] pb-[7rem] px-[6rem] bg-white min-h-screen flex flex-col justify-center items-center">
-          <div className=" w-full text-center flex justify-between">
-            <article className="text-start">
-              {" "}
-              <p className="text-[1.5rem] text-black leading-8 font-[500] mb-2">
-                Extending lifespan by improving <br /> metabolic health in
-              </p>
-              <h1 className="text-[6rem] leading-[5.5rem] tracking-[-0.04em] font-medium text-5xl text-gray-900 mb-6">
-                Senior cats
-              </h1>
-              <div className="flex items-start  justify-between text-sm text-gray-700 mb-10">
-                <div className=" w-[48%] !border-solid !border-t-[1px] !border-black pt-[14px]">
-                  <p className="text-xs uppercase tracking-[0.08em] font-semibold">
-                    PROJECTED APPROVAL
-                  </p>
-                  <p className="text-lg font-medium">
-                    2026<span className="text-xs">*</span>
-                  </p>
-                </div>
-                <div className=" w-[48%] !border-solid !border-t-[1px] !border-black pt-[14px]">
-                  <p className="font-semibold uppercase text-xs tracking-[0.08em]">
-                    DOSAGE FORM
-                  </p>
-                  <p>Daily pill</p>
-                </div>
-              </div>
-            </article>
-            <div className="flex flex-col flex-wrap-reverse">
+          <div className="senior-cats  w-full text-center flex justify-between">
+          <div className="senior-cats-div order-2  flex flex-col flex-wrap-reverse">
               <div className="flex items-center justify-center w-[6rem] h-[6rem] border-[1px] rounded-[50px] text-xs font-bold">
                 LOY-002
               </div>
-              <p className="text-xs text-gray-500  text-start mt-[2.5rem]">
+              <p className="senior-cats-p text-xs text-gray-500  text-start mt-[2.5rem]">
                 *FDA approval not guaranteed
               </p>
             </div>
+            <article className=" order-1 text-start">
+              {" "}
+              <p className="senior-p-2 text-[1.5rem] text-black leading-8 font-[500] mb-2">
+                Extending lifespan by improving <br /> metabolic health in
+              </p>
+              <h1 className="senior-h-2 text-[6rem] leading-[5.5rem] tracking-[-0.04em] font-medium text-5xl text-gray-900 mb-6">
+                Senior cats
+              </h1>
+              <div className="block sm:flex items-start  justify-between text-sm text-gray-700 mb-10">
+                <div className=" senior-div-2 w-[48%] !border-solid !border-t-[1px] !border-black pt-[14px]">
+                  <p className="text-xs uppercase tracking-[0.08em] font-semibold">
+                    PROJECTED APPROVAL
+                  </p>
+                  <p className="stamp  text-lg font-medium">
+                    2026<span className="text-xs">*</span>
+                  </p>
+                </div>
+                <div className=" senior-div-2 w-[48%] !border-solid !border-t-[1px] !border-black pt-[14px]">
+                  <p className="font-semibold uppercase text-xs tracking-[0.08em]">
+                    DOSAGE FORM
+                  </p>
+                  <p className="stamp">Daily pill</p>
+                </div>
+              </div>
+            </article>
+          
           </div>
           <div className="relative w-full h-[31rem]">
             <img
@@ -139,7 +140,7 @@ export default function Product() {
           <h3 className="mb-[2rem] text-xs uppercase font-semibold tracking-[0.08em] text-gray-600">
             About
           </h3>
-          <p className="text-[32px] leading-[48px]  md:text-4xl font-medium text-gray-900 mb-12">
+          <p className="p-line text-[32px] leading-[48px]  md:text-4xl font-medium text-gray-900 mb-12">
             We’re developing LOY-002 to support healthy aging in <br /> senior
             cats of nearly every size. The product is meant to <br /> target
             metabolic dysfunction, which may extend the <br /> number of healthy
@@ -207,33 +208,8 @@ export default function Product() {
         </section>
 
         <section id="large" className="pt-[9rem] pb-[7rem] px-[6rem] bg-white min-h-screen flex flex-col justify-center items-center">
-          <div className=" w-full text-center flex justify-between">
-            <article className="text-start">
-              {" "}
-              <p className="text-[1.5rem] text-black leading-8 font-[500] mb-2">
-                Longer, healthier lives for
-              </p>
-              <h1 className="text-[6rem] leading-[5.5rem] tracking-[-0.04em] font-medium text-5xl text-gray-900 mb-6">
-                Large and giant cats
-              </h1>
-              <div className="flex items-start  justify-between text-sm text-gray-700 mb-10">
-                <div className=" w-[48%] !border-solid !border-t-[1px] !border-black pt-[14px]">
-                  <p className="text-xs uppercase tracking-[0.08em] font-semibold">
-                    PROJECTED APPROVAL
-                  </p>
-                  <p className="text-lg font-medium">
-                    2027<span className="text-xs">*</span>
-                  </p>
-                </div>
-                <div className=" w-[48%] !border-solid !border-t-[1px] !border-black pt-[14px]">
-                  <p className="font-semibold uppercase text-xs tracking-[0.08em]">
-                    DOSAGE FORM
-                  </p>
-                  <p>Injectable or daily pill</p>
-                </div>
-              </div>
-            </article>
-            <div className="flex flex-col flex-wrap-reverse">
+          <div className="senior-cats  w-full text-center flex justify-between">
+          <div className="senior-cats-div order-2  flex flex-col flex-wrap-reverse">
               <div className="flex ">
                 {" "}
                 <div className="mr-[7px] flex items-center justify-center w-[6rem] h-[6rem] border-[1px] rounded-[50px] text-xs font-bold">
@@ -244,10 +220,37 @@ export default function Product() {
                 </div>
               </div>
 
-              <p className="text-xs text-gray-500  text-start mt-[2.5rem]">
+              <p className=" senior-cats-p  text-xs text-gray-500  text-start mt-[2.5rem]">
                 *FDA approval not guaranteed
               </p>
             </div>
+           
+            <article className="order-1  text-start">
+              {" "}
+              <p className="senior-p-2 text-[1.5rem] text-black leading-8 font-[500] mb-2">
+                Longer, healthier lives for
+              </p>
+              <h1 className="senior-h-2 text-[6rem] leading-[5.5rem] tracking-[-0.04em] font-medium text-5xl text-gray-900 mb-6">
+                Large and giant cats
+              </h1>
+              <div className="block sm:flex items-start  justify-between text-sm text-gray-700 mb-10">
+                <div className="senior-div-2 w-[48%] !border-solid !border-t-[1px] !border-black pt-[14px]">
+                  <p className="text-xs uppercase tracking-[0.08em] font-semibold">
+                    PROJECTED APPROVAL
+                  </p>
+                  <p className="stamp text-lg font-medium">
+                    2027<span className="text-xs">*</span>
+                  </p>
+                </div>
+                <div className="senior-div-2  w-[48%] !border-solid !border-t-[1px] !border-black pt-[14px]">
+                  <p className="font-semibold uppercase text-xs tracking-[0.08em]">
+                    DOSAGE FORM
+                  </p>
+                  <p className="stamp">Injectable or daily pill</p>
+                </div>
+              </div>
+            </article>
+           
           </div>
           <div className="relative w-full h-[31rem]">
             <img
@@ -266,7 +269,7 @@ export default function Product() {
           <h3 className="mb-[2rem] text-xs uppercase font-semibold tracking-[0.08em] text-gray-600">
             About
           </h3>
-          <p className=" text-[32px] leading-[48px]  md:text-4xl font-medium text-gray-900 mb-14">
+          <p className="p-line text-[32px] leading-[48px]  md:text-4xl font-medium text-gray-900 mb-14">
             Large and giant breed cats can have as little as half the <br />{" "}
             lifespan of smaller cats. LOY-001 and LOY-003 target <br /> the
             biological mechanisms thought to cause{" "}
