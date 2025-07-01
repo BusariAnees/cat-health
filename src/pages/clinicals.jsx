@@ -52,10 +52,10 @@ export default function Clinicals({setShowModal}) {
   </div>
 
   {/* Study Info Section */}
-  <section className="text-start py-[9rem] px-[5rem] bg-[rgb(243_243_231)] flex justify-between">
+  <section className="clinical-sec-1 text-start py-[9rem] px-[5rem] bg-[rgb(243_243_231)] flex justify-between">
     {/* Left text block */}
-    <div className="w-[30%]">
-      <p className="leading-[3.3rem] text-[3rem] font-semibold">
+    <div className="clinical-div-1 w-[30%]">
+      <p className="clinical-p-1 leading-[3.3rem] text-[3rem] font-semibold">
         Want to join <br /> our study?
       </p>
       <p className="py-[1.2rem]">
@@ -74,7 +74,7 @@ export default function Clinicals({setShowModal}) {
     </div>
 
     {/* Benefits & Requirements */}
-    <article className="w-[60%] space-y-[1.5rem]">
+    <article className="w-[100%] sm:w-[60%] space-y-[1.5rem]">
       {[
         {
           title: "Study benefits",
@@ -94,9 +94,9 @@ export default function Clinicals({setShowModal}) {
           ],
         },
       ].map((section, i) => (
-        <div key={i} className="bg-white flex justify-between rounded-[12px] p-8">
-          <p className="text-2xl font-semibold w-[30%] whitespace-pre-line">{section.title}</p>
-          <ul className="w-[60%] space-y-4">
+        <div key={i} className="block bg-white sm:flex justify-between rounded-[12px] p-8">
+          <p className="clinical-p-2 text-2xl font-semibold w-[30%] whitespace-pre-line">{section.title}</p>
+          <ul className="w-[100%] sm:w-[60%] space-y-4">
             {section.items.map((item, j) => (
               <li key={j} className="flex items-center gap-4 border-b border-[#00000017] pb-4 last:border-none">
                 <FontAwesomeIcon icon={item.icon} className="h-[1.2rem] text-black" />
