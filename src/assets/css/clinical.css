@@ -17,6 +17,20 @@
  /* Tablet: max-width 1024px */
 
  @media (max-width: 1050px) {
+  .g-1{
+    right: 9rem;
+  }
+
+  .g-2 {
+    right: 3rem;
+  }
+
+  .g-3{
+    top: 15rem;
+  }
+.g-4 {
+  top: 5rem;
+}
 
  }
 
@@ -52,6 +66,8 @@
     margin-bottom: 2rem;
     font-size: 1.7rem;
 }
+
+
 
   }
 

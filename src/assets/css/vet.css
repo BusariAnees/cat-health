@@ -4,3 +4,30 @@
     height: 46rem;
     padding: 2.3rem;
   }
+
+
+  /* Tablet: max-width 1024px */
+
+  @media (max-width: 1050px) {
+ .guide-1 {
+  line-height: 2.7rem;
+ }
+
+ .publi-1{
+  width: 17rem;
+ }
+  }
+
+  /* Mobile: max-width 639px */
+
+  @media(max-width:638px){
+
+#vet-p-1{
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+
+.nav-vet-img {
+  height: 20rem;
+}
+  }

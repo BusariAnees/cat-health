@@ -64,9 +64,9 @@ export default function Questions ({setShowModal}) {
 
     return(
   <>
-      <section className="text-start py-[9rem] px-[5rem]  flex justify-between ">
-          <div className="w-[30%] p-0">
-            <p className=" leading-[5.5rem] text-[6rem] font-semibold tracking-[-.04em]">
+      <section className="block py-[6rem] px-[1.5rem] text-start sm:py-[9rem] sm:px-[5rem]  sm:flex justify-between ">
+          <div className=" w-[100%] sm:w-[30%] p-0">
+            <p className="text-[4.5rem] leading-[5.5rem] sm:text-[6rem] font-semibold tracking-[-.04em]">
             Q&A
             </p>
             <p className="py-[1.2rem]">
@@ -81,7 +81,7 @@ export default function Questions ({setShowModal}) {
           </button>
           </div>
 
-          <article className="w-[50%] mx-auto">
+          <article className="mt-[2rem] sm:w-[50%] mx-auto">
       {faqs.map((faq, index) => {
         const isOpen = openIndex === index;
 

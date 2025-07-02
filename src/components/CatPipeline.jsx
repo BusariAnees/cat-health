@@ -15,6 +15,7 @@ const steps = [
   "FDA conditional approval*",
 ];
 
+
 export default function CatPipeline() {
   return (
     <div className="overflow-x-auto w-full">

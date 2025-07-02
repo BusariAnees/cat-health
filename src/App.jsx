@@ -74,7 +74,7 @@ function App() {
        } />
         <Route path="/vets" element={
         <>
-             <div className="px-[4.5rem]">
+             <div className="p-[1.5rem] m:px-[4.5rem]">
             <Header isActive={isActive} setIsActive={setIsActive} />
             </div>
          <Vets  setShowModal={setShowModal}/>
@@ -83,7 +83,7 @@ function App() {
       } />
         <Route path="/owner" element={<>
 
-          <div className="px-[4.5rem]">
+          <div className="p-[1.5rem] m:px-[4.5rem]">
             <Header isActive={isActive} setIsActive={setIsActive} />
             </div>
           <Owner setShowModal={setShowModal}/>
