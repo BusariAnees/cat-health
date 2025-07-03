@@ -164,9 +164,9 @@ export default function Vets({ setShowModal }) {
           </div>
         </div>
 
-        <div className="px-[1.5rem] py-[6rem] max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-start bg-[rgb(238,237,222)] sm:py-[10rem] sm:px-[4rem]">
+        <div className="vet-div-1 px-[1.5rem] py-[6rem] max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-start bg-[rgb(238,237,222)] sm:py-[10rem] sm:px-[4rem]">
           {/* Left Column */}
-          <div className="w-[100%] sm:w-[17rem]">
+          <div className="vet-div-2 w-[100%] sm:w-[17rem]">
             <h1 className=" guide-1 text-[2rem] xl:text-4xl font-[500] mb-6">
               A guide to our
               <br className="hidden sm:block" />
@@ -265,13 +265,13 @@ export default function Vets({ setShowModal }) {
           </div>
         </div>
 
-        <section className="bg-[#f5f3e7] min-h-screen px-[5rem] py-16 text-start">
+        <section className="bg-[#f5f3e7] min-h-screen px-[1.5rem] sm:px-[5rem] py-16 text-start">
           <h2 className="text-[2.5rem] font-semibold mb-8">Publications</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {publications.map((pub, i) => (
               <div
                 key={i}
-                className="publi-1 bg-white p-6 shadow-sm rounded-md font-[500]  px-10  lg:w-[22rem] md:w-[17rem] max-w-3xl"
+                className="publi-1 w-[100%] bg-white p-6 shadow-sm rounded-md font-[500]  px-10  lg:w-[22rem] md:w-[17rem] max-w-3xl"
               >
                 {pub.heading ? (
                   <>

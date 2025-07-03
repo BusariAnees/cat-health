@@ -20,7 +20,15 @@
 
   /* Mobile: max-width 639px */
 
-  @media(max-width:638px){
+  @media(max-width:800px){
+
+.vet-div-1{
+  display: block;
+}
+
+.vet-div-2{
+  width: 100%;
+}
 
 #vet-p-1{
   font-size: 3rem;
@@ -29,5 +37,9 @@
 
 .nav-vet-img {
   height: 20rem;
+}
+
+.publi-1 {
+  width: 100%;
 }
   }

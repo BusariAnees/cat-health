@@ -28,7 +28,7 @@ export default function Scroll() {
         className="nav-owner-1-img relative bg-center h-52rem "
         style={{ height: "52rem" }}
       >
-        <div className="absolute left-[6rem] top-[20rem] text-6xl font-bold">
+        <div className="absolute left-[7rem] top-[2rem] sm:left-[6rem] sm:top-[20rem] text-6xl font-bold">
           <div className="flex gap-3">
             <span className="text-white text-[8rem] font-[500] mr-2">More</span>
 

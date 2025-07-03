@@ -25,9 +25,7 @@
     right: 3rem;
   }
 
-  .g-3{
-    top: 15rem;
-  }
+ 
 .g-4 {
   top: 5rem;
 }
@@ -37,7 +35,7 @@
 
 /* Mobile: max-width 639px */
 
-  @media(max-width:638px){
+  @media(max-width:800px){
     .nav-clinicals-img{
       height: 23rem;
 }

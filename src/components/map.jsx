@@ -54,7 +54,7 @@ export default function Map({ setShowModal }) {
             <div className="top-[3.5rem] left-[10rem] sm:left-[37rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[5rem] right-[13rem] sm:right-[25rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="g-4 top-[6rem]  sm:top-[26rem] right-[15rem] sm:right-[26rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
-            <div className="g-3 top-[12rem] sm:top-[25rem] right-[20rem] sm:right-[27rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
+            <div className="g-3 top-[4rem] sm:top-[25rem] right-[10rem] sm:right-[27rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[12rem]  sm:top-[22rem] right-[7rem] sm:right-[28rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="g-2 top-[5rem] right-[23rem] sm:top-[23rem] sm:right-[30rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[10rem] right-[8rem] sm:top-[20rem] sm:right-[17rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
@@ -77,14 +77,14 @@ export default function Map({ setShowModal }) {
             <div className="top-[3rem] right-[14rem] sm:top-[7rem] sm:right-[28rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[6rem] right-[11rem] sm:top-[13rem] sm:right-[22rem] absolute bg-[rgb(178,214,165)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[6rem] right-[5rem] sm:top-[13rem] sm:right-[4rem] absolute bg-[rgb(240,219,11)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
-            <div className="top-[11rem] right-[22rem] sm:top-[23rem] sm:right-[8rem] absolute bg-[rgb(240,219,11)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
+            <div className="top-[7rem] right-[12rem] sm:top-[23rem] sm:right-[8rem] absolute bg-[rgb(240,219,11)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[10rem] right-[15rem] sm:top-[20rem] sm:right-[6rem] absolute bg-[rgb(240,219,11)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[10rem] right-[7rem] sm:top-[20rem] sm:right-[15rem] absolute bg-[rgb(240,117,117)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[9rem] right-[11rem] sm:top-[18rem] sm:right-[23rem] absolute bg-[rgb(240,117,117)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[10rem] right-[12rem] sm:top-[20rem] sm:right-[25rem] absolute bg-[rgb(240,117,117)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[12rem] right-[16rem] sm:top-[7rem] sm:right-[32rem] absolute bg-[rgb(240,117,117)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[5rem] right-[5rem] sm:top-[10rem] sm:right-[10rem] absolute bg-[rgb(240,117,117)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
-            <div className="top-[8rem] right-[23rem] sm:top-[17rem] sm:right-[7rem] absolute bg-[rgb(240,117,117)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
+            <div className="top-[8rem] right-[15rem] sm:top-[17rem] sm:right-[7rem] absolute bg-[rgb(240,117,117)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[11rem] right-[12rem] sm:top-[22rem] sm:right-[25rem] absolute bg-[rgb(240,117,117)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
             <div className="top-[10rem] right-[7rem] sm:top-[20rem] sm:right-[15rem] absolute bg-[rgb(240,117,117)] h-[15px] w-[15px] border-[2px] border-black rounded-[10px]"></div>
           </article>

@@ -63,3 +63,24 @@
     line-height: 1;
   }
   
+
+ /* Mobile: max-width 639px */
+@media (max-width: 800px) {
+  .nav-owner-img{
+    height: 14rem;
+  }
+
+  .scroll-container {
+    height: 20px;
+    width: 50px;
+  }
+
+
+  .nav-owner-1-img {
+    height: 14rem;
+  }
+
+  .scroll-item{
+    font-size: 2rem;
+  }
+}
