@@ -81,7 +81,7 @@ export default function Owner({setShowModal}) {
         <section className="text-start py-[9rem] px-[1.5rem] sm:px-[5rem] bg-[rgb(243_243_231)] block sm:flex justify-between">
           {/* Left text block */}
           <div className="w-[100%] mb-[2rem] sm:mb-0 sm:w-[40%]">
-            <p className="leading-[4rem] text-[4.2rem] font-semibold">
+            <p className="text-[3rem] leading-[3rem] sm:leading-[4rem] sm:text-[4.2rem] font-semibold">
               A pill to give your cat more healthy years
             </p>
           </div>
@@ -130,11 +130,11 @@ export default function Owner({setShowModal}) {
         <section className="py-[5rem] px-[1.5rem] text-start sm:py-[9rem] sm:px-[5rem] bg-[rgb(238,237,221)] ">
           <h2 className="text-4xl font-bold mb-12">Q&amp;A</h2>
 
-          <div className="block sm:grid grid-cols-2 gap-16 ">
+          <div className="block xl:grid grid-cols-2 gap-16 ">
             {QA.map((text, i) => (
               <div>
                 {/* Question 1 */}
-                <div className="border-t border-black  pt-12 w-[100%] sm:w-[30rem]">
+                <div className="border-t border-black  pt-12 w-[100%] xl:w-[30rem]">
                   <h3 className="text-lg font-semibold mb-4 ">{text.header}</h3>
                   <p className="mb-4 font-[500] text-sm leading-relaxed">
                     {text.body[0]}

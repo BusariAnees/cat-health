@@ -30,7 +30,7 @@ export default function Scroll() {
       >
         <div className="absolute left-[7rem] top-[2rem] sm:left-[6rem] sm:top-[20rem] text-6xl font-bold">
           <div className="flex gap-3">
-            <span className="text-white text-[8rem] font-[500] mr-2">More</span>
+            <span className="text-white text-[2rem] sm:text-[8rem] font-[500] mr-2">More</span>
 
             {/* Scroll container */}
             <div className="scroll-container">

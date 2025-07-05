@@ -241,6 +241,10 @@ body {
 }
 
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Mobile: max-width 639px */
 
 @media (max-width: 800px) {
