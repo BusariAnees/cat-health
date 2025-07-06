@@ -51,7 +51,7 @@ function App() {
                 <div className="px-[1.5rem] m:px-[4.5rem]">
                   <Header isActive={isActive} setIsActive={setIsActive} />
                 </div>
-                <Products />
+                <Products  setShowModal={setShowModal}/>
               </>
             }
           />

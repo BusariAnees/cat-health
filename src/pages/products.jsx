@@ -55,7 +55,7 @@ const steps2 = [
 ];
 
 
-export default function Product() {
+export default function Product({setShowModal}) {
   return (
     <>
       <section>
@@ -338,7 +338,7 @@ export default function Product() {
           </div>
         </section>
       </section>
-      <Footer/>
+      <Footer setShowModal={setShowModal}/>
     </>
   );
 }
