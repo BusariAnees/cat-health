@@ -1,101 +1,68 @@
 import { NavLink } from "react-router-dom";
 
-export default function Overlay(props) {
+const links = [
+  {
+    to: "/",
+    title: "About us",
+    items: ["Our team", "Press room", "Publications", "Our impact"]
+  },
+  {
+    to: "/products",
+    title: "Products",
+    items: ["LOY-001", "LOY-002", "LOY-003", "Our guiding principles"]
+  },
+  {
+    to: "/clinical",
+    title: "Clinical trials",
+    items: ["Stay study", "Qualifications", "Participating clinical sites", "Q&A"]
+  },
+  {
+    to: "/vets",
+    title: "For vets",
+    items: ["Aging thesis", "Drugs in development", "Resources", "Continuing education", "Q&A"]
+  },
+  {
+    to: "/owner",
+    title: "For cat owners",
+    items: ["Effect of aging", "For senior cats", "For large and giant cats", "Resources", "Q&A"]
+  },
+  {
+    to: "/products",
+    title: "Contact us",
+    items: ["General inquiry", "Loyal veterinary team", "Press contact"]
+  }
+];
+
+export default function Overlay({ isActive, setIsActive }) {
   return (
-    <>
-     <div className={`overlay-section-div ${props.isActive ? 'opacity-100' : 'opacity-0 invisible '} `}>
-  <div className="header-logo overlay-logo">Meown</div>
-  <div className="overlay-ul h-screen overflow-y-auto">
-    <NavLink to="/" className="link-dsp" onClick={() => props.setIsActive(false)}>  
-      <div className="div-dsp">
-        <article className="article-dsp">
-          <p className="p-dsp">About us</p>
-          <ul className="ul-dsp">
-            <li>Our team</li>
-            <li>Press room</li>
-            <li>Publications</li>
-            <li>Our impact</li>
-          </ul>
-        </article>
-      </div>
-    </NavLink>
-  
-
-    <NavLink to="/products"  className="link-dsp" onClick={() => props.setIsActive(false)}>
-      <div className="div-dsp">
-        <article className="article-dsp">
-          <p className="p-dsp">Products</p>
-          <ul className="ul-dsp">
-            <li>LOY-001</li>
-            <li>LOY-002</li>
-            <li>LOY-003</li>
-            <li>Our guiding principles</li>
-          </ul>
-        </article>
-      </div>
-      </NavLink>
-
-      <NavLink to="/clinical"  className="link-dsp" onClick={() => props.setIsActive(false)}>
-      <div className="div-dsp">
-        <article className="article-dsp">
-          <p className="p-dsp">Clinical trials</p>
-          <ul className="ul-dsp">
-            <li>Stay study</li>
-            <li>Qualifications</li>
-            <li>Participating clinical sites</li>
-            <li>Q&A</li>
-          </ul>
-        </article>
-      </div>
-      </NavLink>
-
-      <NavLink to="/vets"  className="link-dsp" onClick={() => props.setIsActive(false)}>
-      <div className="div-dsp">
-        <article className="article-dsp">
-          <p className="p-dsp">For vets</p>
-          <ul className="ul-dsp">
-            <li>Aging thesis</li>
-            <li>Drugs in development</li>
-            <li>Resources</li>
-            <li>Continuing education</li>
-            <li>Q&A</li>
-          </ul>
-        </article>
-      </div>
-      </NavLink>
-
-      <NavLink to="/owner"  className="link-dsp" onClick={() => props.setIsActive(false)}>
-      <div className="div-dsp">
-        <article className="article-dsp">
-          <p className="p-dsp">For cat owners</p>
-          <ul className="ul-dsp">
-            <li>Effect of aging</li>
-            <li>For senior cats</li>
-            <li>For large and giant cats</li>
-            <li>Resources</li>
-            <li>Q&A</li>
-          </ul>
-        </article>
-      </div>
-      </NavLink>
-
-  
-
-      <NavLink to="/products"  className="link-dsp" onClick={() => props.setIsActive(false)}>
-      <div className="div-dsp">
-        <article className="article-dsp">
-          <p className="p-dsp">Contact us</p>
-          <ul className="ul-dsp">
-            <li>General inquiry</li>
-            <li>Loyal veterinary team</li>
-            <li>Press contact</li>
-          </ul>
-        </article>
-      </div>
-      </NavLink>
-  </div>
-</div>
-
-    </>
+    <div
+      className={`overlay-section-div transition-opacity duration-300 ease-in-out ${
+        isActive ? "opacity-100" : "opacity-0 invisible"
+      }`}
+    >
+      <div className="header-logo overlay-logo text-2xl font-bold">Meown</div>
+      <nav className="overlay-ul h-screen overflow-y-auto" aria-label="Overlay Navigation">
+        {links.map((link, idx) => (
+          <NavLink
+            key={idx}
+            to={link.to}
+            className="link-dsp block"
+            onClick={() => setIsActive(false)}
+          >
+            <div className="div-dsp">
+              <article className="article-dsp">
+                <p className="p-dsp font-semibold text-lg mb-2">{link.title}</p>
+                <ul className="ul-dsp list-disc list-inside space-y-1">
+                  {link.items.map((item, itemIdx) => (
+                    <li key={itemIdx}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            </div>
+          </NavLink>
+        ))}
+      </nav>
+    </div>
   );
 }
+
