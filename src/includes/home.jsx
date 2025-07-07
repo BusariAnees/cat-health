@@ -18,6 +18,7 @@ export default function Home({ setShowModal, isActive, setIsActive }) {
   return (
     <div className="hero-wrapper relative">
     
+    {/* //first-page-view */}
       <section className="main-section">
       <Header isActive={isActive} setIsActive={setIsActive} />
         <div className="hero-content">

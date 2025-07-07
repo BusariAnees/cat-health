@@ -308,9 +308,6 @@
   .section-4-div {
     width: 50%;
   }
-
-  
- 
 }
 
 /* Mobile: max-width 639px */
@@ -324,7 +321,6 @@
     padding: 0.3rem 0;
   }
 
-  
   .hero-div-footer {
     margin-top: 20rem;
   }
@@ -342,10 +338,6 @@
   .header-logo {
     text-align: start;
   }
-
-
-  
-
 
   .p-dsp {
     margin-bottom: 1rem;
@@ -439,7 +431,6 @@
     text-align: center;
   }
 
-
   .des-3-p-1 {
     line-height: 2.5rem;
     margin: 1rem 0 2rem;
@@ -455,6 +446,4 @@
     height: 15rem;
     width: 100%;
   }
-
- 
 }

@@ -240,7 +240,6 @@ body {
   margin: 0px !important;
 }
 
-
 .no-scroll {
   overflow: hidden;
 }
@@ -253,7 +252,6 @@ body {
   }
 }
 
-
 /* Tablet: max-width 1024px */
 
 @media (max-width: 1050px) {
@@ -262,7 +260,7 @@ body {
   }
 
   .main-section {
-   background-position: 40px;
+    background-position: 40px;
   }
 
   .hero-heading {
@@ -275,9 +273,9 @@ body {
 
   .hero-div-footer {
     margin-top: 9rem;
-}
+  }
 
-.body-section {
-  height: 40rem;
-}
+  .body-section {
+    height: 40rem;
+  }
 }

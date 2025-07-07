@@ -1,45 +1,43 @@
 .nav-vet-img {
-    background-image: url("/src/assets/img/cat-10.jpg");
-    background-size: cover;
-    height: 46rem;
-    padding: 2.3rem;
+  background-image: url("/src/assets/img/cat-10.jpg");
+  background-size: cover;
+  height: 46rem;
+  padding: 2.3rem;
+}
+
+/* Tablet: max-width 1024px */
+
+@media (max-width: 1050px) {
+  .guide-1 {
+    line-height: 2.7rem;
   }
 
+  .publi-1 {
+    width: 17rem;
+  }
+}
 
-  /* Tablet: max-width 1024px */
+/* Mobile: max-width 639px */
 
-  @media (max-width: 1050px) {
- .guide-1 {
-  line-height: 2.7rem;
- }
-
- .publi-1{
-  width: 17rem;
- }
+@media (max-width: 800px) {
+  .vet-div-1 {
+    display: block;
   }
 
-  /* Mobile: max-width 639px */
-
-  @media(max-width:800px){
-
-.vet-div-1{
-  display: block;
-}
-
-.vet-div-2{
-  width: 100%;
-}
-
-#vet-p-1{
-  font-size: 3rem;
-  line-height: 3.2rem;
-}
-
-.nav-vet-img {
-  height: 20rem;
-}
-
-.publi-1 {
-  width: 100%;
-}
+  .vet-div-2 {
+    width: 100%;
   }
+
+  #vet-p-1 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+
+  .nav-vet-img {
+    height: 20rem;
+  }
+
+  .publi-1 {
+    width: 100%;
+  }
+}
