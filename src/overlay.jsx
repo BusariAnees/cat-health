@@ -41,6 +41,15 @@ export default function Overlay({ isActive, setIsActive }) {
       }`}
     >
       <div className="header-logo overlay-logo text-2xl font-bold">Meown</div>
+      <div
+                 className={`hamburger ${isActive ? "active" : ""}`}
+                 onClick={() => {
+                   setIsActive(!isActive)}
+                 }
+               >
+                 <span></span>
+                 <span></span>
+               </div>
       <nav className="overlay-ul h-screen overflow-y-auto" aria-label="Overlay Navigation">
         {links.map((link, idx) => (
           <NavLink

@@ -26,7 +26,6 @@ function App() {
 
   return (
     <Suspense>
-        <Header isActive={isActive} setIsActive={setIsActive} />
       <div className={`overlay ${isActive ? "overlay--active" : ""}`}>
         <Overlay isActive={isActive} setIsActive={setIsActive} />
       </div>

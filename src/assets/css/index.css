@@ -136,7 +136,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 1300;
+  z-index: 1000;
   padding: 8px 0;
   max-width: 100%;
 }
