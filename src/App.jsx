@@ -32,6 +32,7 @@ function App() {
       <ScrollToTop />
 
       <main>
+      <Header isActive={isActive} setIsActive={setIsActive} />
         <Routes>
           <Route
             path="/"
