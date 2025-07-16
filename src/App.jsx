@@ -29,7 +29,6 @@ function App() {
       <div className={`overlay ${isActive ? "overlay--active" : ""}`}>
         <Overlay isActive={isActive} setIsActive={setIsActive} />
       </div>
-
       <ScrollToTop />
 
       <main>
@@ -48,7 +47,7 @@ function App() {
             path="/products"
             element={
               <>
-                <div className="px-[1.5rem] m:px-[4.5rem]">
+                <div className="p-[1.5rem] m:px-[4.5rem]">
                   <Header isActive={isActive} setIsActive={setIsActive} />
                 </div>
                 <Products  setShowModal={setShowModal}/>
@@ -59,7 +58,7 @@ function App() {
             path="/clinical"
             element={
               <>
-                <div className="px-[1.5rem] m:px-[4.5rem]">
+                <div className="p-[1.5rem] m:px-[4.5rem]">
                   <Header isActive={isActive} setIsActive={setIsActive} />
                 </div>
                 <Clinicals setShowModal={setShowModal} />
@@ -70,7 +69,7 @@ function App() {
             path="/vets"
             element={
               <>
-                <div className="px-[1.5rem] m:px-[4.5rem]">
+                <div className="p-[1.5rem] m:px-[4.5rem]">
                   <Header isActive={isActive} setIsActive={setIsActive} />
                 </div>
                 <Vets setShowModal={setShowModal} />
@@ -81,7 +80,7 @@ function App() {
             path="/owner"
             element={
               <>
-                <div className="px-[1.5rem] m:px-[4.5rem]">
+                <div className="p-[1.5rem] m:px-[4.5rem]">
                   <Header isActive={isActive} setIsActive={setIsActive} />
                 </div>
                 <Owner setShowModal={setShowModal} />
