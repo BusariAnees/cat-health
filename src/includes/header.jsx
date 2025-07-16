@@ -21,7 +21,11 @@ import {Link} from "react-router-dom";
            </header>
            <div
                  className={`hamburger ${isActive ? "active" : ""}`}
-                 onClick={() => setIsActive(!isActive)}
+                 onClick={(e) => {
+                  e.preventDefault(); // prevents accidental navigation
+                  e.stopPropagation(); // prevents bubbling
+                   setIsActive(!isActive)}
+                 }
                >
                  <span></span>
                  <span></span>
