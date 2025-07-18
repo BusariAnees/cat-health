@@ -47,7 +47,7 @@ export default function Overlay({ isActive, setIsActive }) {
        
 
 
-      <nav className="overlay-ul  h-[calc(100vh-60px)] overflow-y-auto mb-[5rem]" aria-label="Overlay Navigation">
+      <nav className="overlay-ul   mb-[5rem]" aria-label="Overlay Navigation">
         {links.map((link, idx) => (
           <NavLink
             key={idx}
