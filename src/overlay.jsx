@@ -43,11 +43,12 @@ export default function Overlay({ isActive, setIsActive }) {
         isActive ? "opacity-100" : "opacity-0 invisible"
       }`}
     >
-      <div className="header-logo overlay-logo text-2xl font-bold">Meown</div>
+      <div className="header-logo overlay-logo text-2xl font-bold ">Meown</div>
        
 
 
-      <nav className="overlay-ul   mb-[5rem]" aria-label="Overlay Navigation">
+
+      <nav className="overlay-ul  h-[calc(100vh-60px)] overflow-y-auto" aria-label="Overlay Navigation">
         {links.map((link, idx) => (
           <NavLink
             key={idx}
@@ -57,7 +58,7 @@ export default function Overlay({ isActive, setIsActive }) {
           >
             <div className="div-dsp">
               <article className="article-dsp">
-                <p className="p-dsp font-semibold text-lg mb-[2rem]">{link.title}</p>
+                <p className="p-dsp font-semibold text-lg mb-2">{link.title}</p>
                 <ul className="ul-dsp list-disc list-inside space-y-1">
                   {link.items.map((item, itemIdx) => (
                     <li key={itemIdx}>{item}</li>
