@@ -42,6 +42,11 @@
 
 .overlay-logo {
   color: #c2c2c2;
+  font-family: "Playwrite DK Loopet", cursive;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  text-decoration: none;
+  /* margin-right: 15rem; */
 }
 
 .overlay.overlay--active {

@@ -36,46 +36,102 @@ const links = [
   }
 ];
 
+
 export default function Overlay({ isActive, setIsActive }) {
   return (
-    <div
-      className={`fixed inset-0 bg-white transition-opacity duration-300 ease-in-out z-[9999] ${
-        isActive ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"
+     <div
+      className={`overlay-section-div transition-opacity duration-300 ease-in-out  z-[9999]${
+        isActive ? "opacity-100" : "opacity-0 invisible"
       }`}
-      onClick={(e) => e.stopPropagation()} // Prevent closing by clicking outside
     >
-      {/* Header Section */}
-      <div className="flex justify-between items-center p-4 border-b relative z-50">
-        <div className="text-2xl font-bold">Meown</div>
+      {/* Top Header */}
+<div className="flex items-start">
+<div className="  overlay-logo  text-2xl font-bold">Meown</div>
+</div>
+      
 
-       
-      </div>
+     
+  
 
-      {/* Navigation with scrollable content */}
-      <nav
-        className="overlay-ul relative z-40 h-[calc(100vh-60px)] overflow-y-auto px-6 py-4"
-        aria-label="Overlay Navigation"
-      >
+      {/* Navigation */}
+        <nav className="overlay-ul  z-40 h-[calc(100vh-60px)] overflow-y-auto" aria-label="Overlay Navigation">
         {links.map((link, idx) => (
           <NavLink
             key={idx}
             to={link.to}
-            className="block mb-6"
-            onClick={(e) => {
-              e.stopPropagation(); // Prevent from bubbling to overlay
-              setIsActive(false);
-            }}
+            className="link-dsp block"
+            onClick={() => setIsActive(false)}
           >
-            <p className="font-semibold text-lg mb-2">{link.title}</p>
-            <ul className="list-disc list-inside space-y-1 text-gray-700">
-              {link.items.map((item, itemIdx) => (
-                <li key={itemIdx}>{item}</li>
-              ))}
-            </ul>
+            <div className="div-dsp">
+              <article className="article-dsp">
+                <p className="p-dsp font-semibold text-lg mb-2">{link.title}</p>
+                <ul className="ul-dsp list-disc list-inside space-y-1">
+                  {link.items.map((item, itemIdx) => (
+                    <li key={itemIdx}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            </div>
           </NavLink>
         ))}
       </nav>
     </div>
   );
 }
+
+
+
+
+
+
+// export default function Overlay({ isActive, setIsActive }) {
+//   return (
+//     <div
+//       className={`overlay-section-div transition-opacity duration-300 ease-in-out  z-[9999]${
+//         isActive ? "opacity-100" : "opacity-0 invisible"
+//       }`}
+//     >
+//       <div className="header-logo overlay-logo text-2xl font-bold z-50">Meown</div>
+//         <div
+//                  className={`hamburger ${isActive ? "active" : ""}`}
+//                  onClick={() => {
+//                    setIsActive(!isActive)}
+//                  }
+//                >
+//                  <span></span>
+//                  <span></span>
+//                </div>
+
+// {/* <button
+//                   onClick={() => setIsActive(false)}
+//                   className="absolute top-4 right-4 text-xl text-gray-500 hover:text-black"
+//                 >
+//                   <FontAwesomeIcon icon={faXmark} />
+//                 </button> */}
+
+
+//       <nav className="overlay-ul  z-40 h-[calc(100vh-60px)] overflow-y-auto" aria-label="Overlay Navigation">
+//         {links.map((link, idx) => (
+//           <NavLink
+//             key={idx}
+//             to={link.to}
+//             className="link-dsp block"
+//             onClick={() => setIsActive(false)}
+//           >
+//             <div className="div-dsp">
+//               <article className="article-dsp">
+//                 <p className="p-dsp font-semibold text-lg mb-2">{link.title}</p>
+//                 <ul className="ul-dsp list-disc list-inside space-y-1">
+//                   {link.items.map((item, itemIdx) => (
+//                     <li key={itemIdx}>{item}</li>
+//                   ))}
+//                 </ul>
+//               </article>
+//             </div>
+//           </NavLink>
+//         ))}
+//       </nav>
+//     </div>
+//   );
+// }
 
