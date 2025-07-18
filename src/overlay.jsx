@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 const links = [
   {
     to: "/",
@@ -41,16 +44,10 @@ export default function Overlay({ isActive, setIsActive }) {
       }`}
     >
       <div className="header-logo overlay-logo text-2xl font-bold">Meown</div>
-      <div
-                 className={`hamburger ${isActive ? "active" : ""}`}
-                 onClick={() => {
-                   setIsActive(!isActive)}
-                 }
-               >
-                 <span></span>
-                 <span></span>
-               </div>
-      <nav className="overlay-ul h-screen overflow-y-auto" aria-label="Overlay Navigation">
+       
+
+
+      <nav className="overlay-ul  h-[calc(100vh-60px)] overflow-y-auto mb-[5rem]" aria-label="Overlay Navigation">
         {links.map((link, idx) => (
           <NavLink
             key={idx}
@@ -60,7 +57,7 @@ export default function Overlay({ isActive, setIsActive }) {
           >
             <div className="div-dsp">
               <article className="article-dsp">
-                <p className="p-dsp font-semibold text-lg mb-2">{link.title}</p>
+                <p className="p-dsp font-semibold text-lg mb-[2rem]">{link.title}</p>
                 <ul className="ul-dsp list-disc list-inside space-y-1">
                   {link.items.map((item, itemIdx) => (
                     <li key={itemIdx}>{item}</li>

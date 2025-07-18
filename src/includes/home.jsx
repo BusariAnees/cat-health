@@ -20,7 +20,7 @@ export default function Home({ setShowModal, isActive, setIsActive }) {
     
     {/* //first-page-view */}
       <section className="main-section">
-      <Header isActive={isActive} setIsActive={setIsActive} />
+      <Header setShowModal={setShowModal} isActive={isActive} setIsActive={setIsActive} />
         <div className="hero-content">
           <h1 className="hero-heading">
             More time <br /> with the cats <br /> we love
